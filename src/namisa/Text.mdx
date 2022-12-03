@@ -1,0 +1,25 @@
+import { Header1, Header2, Header3, Text1, Text2 } from "../components/Text"
+import { Vexile } from "@haechi/flexile"
+
+# Typography
+
+1차적으로 모든 텍스트에 아래의 스타일을 사용하는 것을 원칙으로 하지만, 불가피한 경우에는
+별도 컴포넌트를 생성하지 않고 인라인 스타일로 처리합니다..
+
+<Namisa
+    controls={{
+        text: {
+            default: "Text",
+        },
+    }}
+>
+    {({ args }) => (
+        <Vexile>
+            <Header1>Header1 {args.text}</Header1>
+            <Header2>Header2 {args.text}</Header2>
+            <Header3>Header3 {args.text}</Header3>
+            <Text1>Text1 {args.text}</Text1>
+            <Text2>Text2 {args.text}</Text2>
+        </Vexile>
+    )}
+</Namisa>
