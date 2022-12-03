@@ -34,7 +34,7 @@ export const SwitchView: React.FC<SwitchProps> = (props) => {
                     )})`,
                 }}
             >
-                <styles.Indicator></styles.Indicator>
+                <styles.Indicator />
             </styles.IndicatorWrapper>
         </styles.Background>
     )
