@@ -1,6 +1,6 @@
-# Callout
+# Input
 
-import Callout from "./Callout"
+import Input from "./Input"
 import { iconList } from "../icons"
 
 <Namisa
@@ -9,10 +9,10 @@ import { iconList } from "../icons"
             options: iconList,
             default: iconList[0],
         },
-        text: {
-            default: "Callout 컴포넌트의 내용입니다",
+        placeholder: {
+            default: "Placeholder",
         },
     }}
 >
-    {(args) => <Callout {...args} />}
+    {({ args }) => <Input args={args} />}
 </Namisa>

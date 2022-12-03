@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client"
 import { Viewer } from "namisa"
 import "namisa/dist/style.css"
 import "./config.css"
+import "./fonts/seed.css"
 
 const components = import.meta.glob("/src/namisa/**/*.mdx")
 
