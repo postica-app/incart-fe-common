@@ -1,0 +1,19 @@
+# Callout
+
+import Callout from "./Callout"
+import Bank from "../icons/Bank.svg"
+import { iconList } from "../icons"
+
+<Namisa
+    controls={{
+        icon: {
+            options: iconList,
+            default: iconList[0],
+        },
+        text: {
+            default: "Callout 컴포넌트의 내용입니다",
+        },
+    }}
+>
+    {(args) => <Callout {...args} />}
+</Namisa>

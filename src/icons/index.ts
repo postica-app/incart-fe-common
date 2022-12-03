@@ -22,4 +22,4 @@ export const iconList = [
     "Truck",
     "Wallet",
     "X",
-]
+] as const
