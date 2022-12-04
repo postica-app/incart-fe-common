@@ -10,11 +10,15 @@ export const styles = {
             backgroundColor: "white",
             lightBorder: true,
         },
+        "&:focus-within div": {
+            color: "$purple",
+        },
     }),
     IconWrapper: styled("div", {
         padding: "3rem",
         paddingRight: "0rem",
         display: "grid",
+        color: "$grey5",
     }),
     LogicalInput: styled("input", {
         border: "none",

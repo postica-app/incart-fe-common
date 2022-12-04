@@ -10,17 +10,13 @@ export const Input: React.FC<
         >,
         "ref"
     > & {
-        icon: (props: {
-            color: string
-            width: string
-            flexShrink: number
-        }) => JSX.Element
+        icon: (props: { width: string; flexShrink: number }) => JSX.Element
     }
 > = ({ icon: Icon, ...props }) => (
     <label>
         <styles.Wrapper>
             <styles.IconWrapper>
-                <Icon color={colors.grey5} flexShrink={0} width="6rem" />
+                <Icon flexShrink={0} width="6rem" />
             </styles.IconWrapper>
             <styles.LogicalInput {...props} />
         </styles.Wrapper>
