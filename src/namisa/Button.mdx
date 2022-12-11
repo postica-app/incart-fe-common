@@ -1,0 +1,28 @@
+# Buttons
+
+import Button from "./Button"
+import { iconList } from "../icons"
+
+<Namisa
+    controls={{
+        text: {
+            default: "Button",
+        },
+        size: {
+            default: "normal",
+            options: ["normal", "small"],
+        },
+        icon: {
+            options: iconList,
+            default: iconList[0],
+        },
+        ghost: {
+            default: false,
+        },
+        active: {
+            default: false,
+        },
+    }}
+>
+    {(props) => <Button {...props} />}
+</Namisa>

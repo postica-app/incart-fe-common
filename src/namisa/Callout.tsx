@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react"
-import Callout from "../components/Callout/Index"
+import Callout from "../components/Callout"
 import { iconList } from "../icons"
 
 export default (props: {

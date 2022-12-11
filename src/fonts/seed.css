@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Seed';
     src:  url('./LINESeedKR-Bd.woff2') format('woff2');
     font-weight: 700;
@@ -14,13 +14,13 @@
     font-family: 'Seed';
     src:  url('./LINESeedKR-Th.woff2') format('woff2');
     font-weight: 250;
-}
+} */
 
 * {
-    font-family: "Seed";
+    font-family: "SUIT";
 }
 
 input {
-    font-family: "Seed";
+    font-family: "SUIT";
     font-size: 4rem;
 }
