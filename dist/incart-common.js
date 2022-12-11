@@ -797,12 +797,12 @@ const Wn = Ge.exports.Fragment, j = Ge.exports.jsx, z = Ge.exports.jsxs, Bn = /*
   const {
     TextComponent: o,
     iconWidth: a
-  } = jn(() => t.size === "normal" ? {
-    TextComponent: Dn,
-    iconWidth: "5rem"
-  } : {
+  } = jn(() => t.size === "small" ? {
     TextComponent: kn,
     iconWidth: "4rem"
+  } : {
+    TextComponent: Dn,
+    iconWidth: "5rem"
   }, [t.size]);
   return console.log(t), /* @__PURE__ */ z(Ln.Wrapper, {
     ...t,

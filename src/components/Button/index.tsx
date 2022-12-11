@@ -10,14 +10,14 @@ export const Button: React.FC<
 > = ({ children: text, icon: Icon, ...props }) => {
     const { TextComponent, iconWidth } = useMemo(
         () =>
-            props.size === "normal"
+            props.size === "small"
                 ? {
-                      TextComponent: Header2,
-                      iconWidth: "5rem",
-                  }
-                : {
                       TextComponent: Header3,
                       iconWidth: "4rem",
+                  }
+                : {
+                      TextComponent: Header2,
+                      iconWidth: "5rem",
                   },
         [props.size]
     )
