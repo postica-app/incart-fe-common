@@ -81,6 +81,7 @@ const hr = {
     borderRadius: "12rem",
     border: "none",
     alignItems: "center",
+    justifyContent: "center",
     compoundVariants: [
       {
         ghost: !0,

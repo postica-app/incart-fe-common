@@ -8,6 +8,7 @@ export const styles = {
         borderRadius: "12rem",
         border: "none",
         alignItems: "center",
+        justifyContent: "center",
         compoundVariants: [
             {
                 ghost: true,
