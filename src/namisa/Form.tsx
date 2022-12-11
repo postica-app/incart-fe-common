@@ -4,6 +4,8 @@ import { FInput } from "../components/Input"
 import { FSwitch } from "../components/Switch"
 import FormField from "../components/FieldHeader"
 import { Vexile } from "@haechi/flexile"
+import { FCheckbox } from "../components/Checkbox"
+import { Text2 } from "../components/Text"
 
 export default () => {
     const formik = useFormik({
@@ -46,6 +48,11 @@ export default () => {
                             name="학번"
                             icon={(style) => <Me style={style} />}
                         />
+                    </FormField>
+                    <FormField name="자퇴할거에요?">
+                        <FCheckbox name="자퇴">
+                            <Text2>잘 가시게</Text2>
+                        </FCheckbox>
                     </FormField>
                     <input type="submit" name="submit" />
                 </Vexile>
