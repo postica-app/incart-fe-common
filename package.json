@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@mdx-js/rollup": "^2.1.5",
+        "formik": "^2.2.9",
         "namisa": "file:..\\namisa",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
