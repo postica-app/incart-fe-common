@@ -3,7 +3,8 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "main": "./src/lib.ts",
+    "main": "./dist/incart-common.umd.cjs",
+    "types": "./dist/lib.d.ts",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
