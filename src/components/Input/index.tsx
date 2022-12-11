@@ -1,6 +1,8 @@
 import React from "react"
 import { useField } from "formik"
 import { styles } from "./styles"
+import { Vexile } from "@haechi/flexile"
+import { Text2 } from "../Text"
 
 type InputProps = Omit<
     React.DetailedHTMLProps<
@@ -10,16 +12,20 @@ type InputProps = Omit<
     "ref"
 > & {
     icon: (props: { width: string; flexShrink: number }) => JSX.Element
+    errorMessage?: string
 }
 
 export const Input: React.FC<InputProps> = ({ icon: Icon, ...props }) => (
     <label>
-        <styles.Wrapper>
-            <styles.IconWrapper>
-                <Icon flexShrink={0} width="6rem" />
-            </styles.IconWrapper>
-            <styles.LogicalInput {...props} />
-        </styles.Wrapper>
+        <Vexile gap={2}>
+            <styles.Wrapper>
+                <styles.IconWrapper>
+                    <Icon flexShrink={0} width="6rem" />
+                </styles.IconWrapper>
+                <styles.LogicalInput {...props} />
+            </styles.Wrapper>
+            {props.errorMessage && <Text2 blue>{props.errorMessage}</Text2>}
+        </Vexile>
     </label>
 )
 
@@ -28,8 +34,9 @@ export const FInput: React.FC<
         name: string
     }
 > = (props) => {
-    const [input] = useField(props.name)
-    return <Input {...props} {...input} />
+    const [input, meta] = useField(props.name)
+
+    return <Input {...props} {...input} errorMessage={meta.error} />
 }
 
 export default Input
