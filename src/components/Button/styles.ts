@@ -79,8 +79,8 @@ export const styles = {
             },
         },
         defaultVariants: {
-            // active: true,
-            // ghost: false,
+            active: true,
+            ghost: false,
             size: "normal",
         },
     }),

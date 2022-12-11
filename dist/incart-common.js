@@ -138,6 +138,8 @@ const hr = {
       }
     },
     defaultVariants: {
+      active: !0,
+      ghost: !1,
       size: "normal"
     }
   })
