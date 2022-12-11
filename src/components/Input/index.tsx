@@ -1,18 +1,18 @@
 import React from "react"
-import colors from "../../colors"
+import { useField } from "formik"
 import { styles } from "./styles"
 
-export const Input: React.FC<
-    Omit<
-        React.DetailedHTMLProps<
-            React.InputHTMLAttributes<HTMLInputElement>,
-            HTMLInputElement
-        >,
-        "ref"
-    > & {
-        icon: (props: { width: string; flexShrink: number }) => JSX.Element
-    }
-> = ({ icon: Icon, ...props }) => (
+type InputProps = Omit<
+    React.DetailedHTMLProps<
+        React.InputHTMLAttributes<HTMLInputElement>,
+        HTMLInputElement
+    >,
+    "ref"
+> & {
+    icon: (props: { width: string; flexShrink: number }) => JSX.Element
+}
+
+export const Input: React.FC<InputProps> = ({ icon: Icon, ...props }) => (
     <label>
         <styles.Wrapper>
             <styles.IconWrapper>
@@ -22,5 +22,14 @@ export const Input: React.FC<
         </styles.Wrapper>
     </label>
 )
+
+export const FInput: React.FC<
+    InputProps & {
+        name: string
+    }
+> = (props) => {
+    const [input] = useField(props.name)
+    return <Input {...props} {...input} />
+}
 
 export default Input

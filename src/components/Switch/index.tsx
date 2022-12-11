@@ -1,6 +1,6 @@
 import { FC, useCallback, useEffect, useState } from "react"
-import { useField, useFormikContext } from "formik"
 import { SwitchProps, SwitchView } from "./View"
+import { useField } from "formik"
 
 export const useSwitch = (props: SwitchProps) => {
     const [selectedKey, setSelectedKey] = useState<string>(
