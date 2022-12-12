@@ -1,5 +1,5 @@
-import { ComponentProps } from "@stitches/react";
-import { styles } from "./styles";
+import { Hexile } from "@haechi/flexile";
+import { ComponentProps } from "react";
 export declare const Callout: React.FC<{
     icon?: (props: {
         width: string;
@@ -7,5 +7,5 @@ export declare const Callout: React.FC<{
         height: string;
     }) => JSX.Element;
     children: string;
-} & ComponentProps<typeof styles.Container>>;
+} & ComponentProps<typeof Hexile>>;
 export default Callout;

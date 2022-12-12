@@ -1,4 +1,5 @@
-import { ComponentProps } from "@stitches/react"
+import { Hexile } from "@haechi/flexile"
+import { ComponentProps } from "react"
 import { Text2 } from "../Text"
 import { styles } from "./styles"
 
@@ -10,7 +11,7 @@ export const Callout: React.FC<
             height: string
         }) => JSX.Element
         children: string
-    } & ComponentProps<typeof styles.Container>
+    } & ComponentProps<typeof Hexile>
 > = ({ children, icon: Icon, ...props }) => {
     return (
         <styles.Container gap={2} padding={3} y="center" {...props}>
