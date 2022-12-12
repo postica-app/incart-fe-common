@@ -32,4 +32,8 @@ export const {
             transition: "300ms cubic-bezier(0,.67,0,.99)",
         }),
     },
+    media: {
+        phone: "(max-width: 480px)",
+        tablet: "(max-width: 800px)",
+    },
 })

@@ -1,5 +1,5 @@
-import { styled } from "@stitches/react"
 import colors from "../colors"
+import { styled } from "../stitches.config"
 
 const commonStyle = {
     margin: "0px",

@@ -1,6 +1,9 @@
 export declare const styled: <Type extends import("@stitches/react/types/util").Function | keyof JSX.IntrinsicElements | import("react").ComponentType<any>, Composers extends (string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> | {
     [name: string]: unknown;
-})[], CSS = import("@stitches/react/types/css-util").CSS<{}, {
+})[], CSS = import("@stitches/react/types/css-util").CSS<{
+    phone: "(max-width: 480px)";
+    tablet: "(max-width: 800px)";
+}, {
     colors: {
         readonly purple: "#6A23C6";
         readonly purpleLight: "#E5D4FA";
@@ -48,7 +51,13 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         css: CSS;
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? Composers[K][keyof Composers[K] & "variants"] extends infer T_1 ? { [Name_1 in keyof T_1]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : never : import("@stitches/react/types/util").WideObject) | undefined;
-} & CSS & (Composers[K] extends infer T_2 ? { [K2 in keyof T_2]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; } : never); }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {}, import("@stitches/react/types/css-util").CSS<{}, {
+} & CSS & (Composers[K] extends infer T_2 ? { [K2 in keyof T_2]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; } : never); }) => import("@stitches/react/types/styled-component").StyledComponent<Type, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
+    phone: "(max-width: 480px)";
+    tablet: "(max-width: 800px)";
+}, import("@stitches/react/types/css-util").CSS<{
+    phone: "(max-width: 480px)";
+    tablet: "(max-width: 800px)";
+}, {
     colors: {
         readonly purple: "#6A23C6";
         readonly purpleLight: "#E5D4FA";
@@ -87,7 +96,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
 }>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").ExoticComponent<any> | import("react").JSXElementConstructor<any> | {
     [name: string]: unknown;
-})[], CSS = import("@stitches/react/types/css-util").CSS<{}, {
+})[], CSS = import("@stitches/react/types/css-util").CSS<{
+    phone: "(max-width: 480px)";
+    tablet: "(max-width: 800px)";
+}, {
     colors: {
         readonly purple: "#6A23C6";
         readonly purpleLight: "#E5D4FA";
@@ -135,13 +147,19 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         css: CSS;
     })[] | undefined;
     defaultVariants?: ("variants" extends keyof Composers[K] ? Composers[K][keyof Composers[K] & "variants"] extends infer T_1 ? { [Name_1 in keyof T_1]?: import("@stitches/react/types/util").String | import("@stitches/react/types/util").Widen<keyof Composers[K][keyof Composers[K] & "variants"][Name_1]> | undefined; } : never : import("@stitches/react/types/util").WideObject) | undefined;
-} & CSS & (Composers[K] extends infer T_2 ? { [K2 in keyof T_2]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; } : never); }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {}, CSS>, globalCss: <Styles extends {
+} & CSS & (Composers[K] extends infer T_2 ? { [K2 in keyof T_2]: K2 extends "compoundVariants" | "defaultVariants" | "variants" ? unknown : K2 extends keyof CSS ? CSS[K2] : unknown; } : never); }) => import("@stitches/react/types/styled-component").CssComponent<import("@stitches/react/types/styled-component").StyledComponentType<Composers>, import("@stitches/react/types/styled-component").StyledComponentProps<Composers>, {
+    phone: "(max-width: 480px)";
+    tablet: "(max-width: 800px)";
+}, CSS>, globalCss: <Styles extends {
     [K: string]: any;
 }>(...styles: ({
     '@import'?: unknown;
     '@font-face'?: unknown;
 } & { [K in keyof Styles]: K extends "@@font-face" ? import("@stitches/react/types/css").AtRule.FontFace | import("@stitches/react/types/css").AtRule.FontFace[] : K extends `@keyframes ${string}` ? {
-    [x: string]: import("@stitches/react/types/css-util").CSS<{}, {
+    [x: string]: import("@stitches/react/types/css-util").CSS<{
+        phone: "(max-width: 480px)";
+        tablet: "(max-width: 800px)";
+    }, {
         colors: {
             readonly purple: "#6A23C6";
             readonly purpleLight: "#E5D4FA";
@@ -179,7 +197,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             transition: string;
         };
     }>;
-} : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{}, {
+} : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
+    phone: "(max-width: 480px)";
+    tablet: "(max-width: 800px)";
+}, {
     colors: {
         readonly purple: "#6A23C6";
         readonly purpleLight: "#E5D4FA";
@@ -217,7 +238,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         transition: string;
     };
 }>; })[]) => () => string, keyframes: (style: {
-    [offset: string]: import("@stitches/react/types/css-util").CSS<{}, {
+    [offset: string]: import("@stitches/react/types/css-util").CSS<{
+        phone: "(max-width: 480px)";
+        tablet: "(max-width: 800px)";
+    }, {
         colors: {
             readonly purple: "#6A23C6";
             readonly purpleLight: "#E5D4FA";
@@ -357,7 +381,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     selector: string;
 } & (Argument0 extends string ? import("@stitches/react/types/stitches").ThemeTokens<Argument1, ""> : import("@stitches/react/types/stitches").ThemeTokens<Argument0, "">), config: {
     prefix: "";
-    media: {};
+    media: {
+        phone: "(max-width: 480px)";
+        tablet: "(max-width: 800px)";
+    };
     theme: {
         colors: {
             readonly purple: "#6A23C6";

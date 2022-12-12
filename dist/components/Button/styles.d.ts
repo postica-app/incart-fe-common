@@ -3,7 +3,13 @@ export declare const styles: {
         size?: "normal" | "small" | undefined;
         active?: boolean | "true" | "false" | undefined;
         ghost?: boolean | "true" | "false" | undefined;
-    }, {}, import("@stitches/react/types/css-util").CSS<{}, {
+    }, {
+        phone: "(max-width: 480px)";
+        tablet: "(max-width: 800px)";
+    }, import("@stitches/react/types/css-util").CSS<{
+        phone: "(max-width: 480px)";
+        tablet: "(max-width: 800px)";
+    }, {
         colors: {
             readonly purple: "#6A23C6";
             readonly purpleLight: "#E5D4FA";

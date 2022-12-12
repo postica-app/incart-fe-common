@@ -1,4 +1,4 @@
-export { styled } from "./stitches.config"
+export { styled, keyframes } from "./stitches.config"
 export { Button } from "./components/Button"
 export { Callout } from "./components/Callout"
 export { Checkbox } from "./components/Checkbox"
