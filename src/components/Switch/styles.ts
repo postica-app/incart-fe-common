@@ -31,6 +31,8 @@ export default {
         height: "100%",
         borderRadius: "2rem",
         elevated: true,
-        lightBorder: true,
+        lightBorder: {
+            withShadow: true,
+        },
     }),
 }

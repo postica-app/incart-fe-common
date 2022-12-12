@@ -49,7 +49,10 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean | undefined;
+        color?: string | undefined;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -107,7 +110,10 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean | undefined;
+        color?: string | undefined;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -165,7 +171,10 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean | undefined;
+        color?: string | undefined;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -223,7 +232,10 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean | undefined;
+        color?: string | undefined;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -281,7 +293,10 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean | undefined;
+        color?: string | undefined;
+    }) => {
         boxShadow: string;
     };
     animated: () => {

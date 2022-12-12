@@ -1,7 +1,7 @@
 import useSwitch from "../components/Switch"
 
 export default () => {
-    const [value, setValue, Switch] = useSwitch({
+    const [value, setValue, setErrorMessage, Switch] = useSwitch({
         items: [
             {
                 name: "옵션1",
@@ -14,5 +14,5 @@ export default () => {
         ],
     })
 
-    return Switch
+    return <>{Switch}</>
 }

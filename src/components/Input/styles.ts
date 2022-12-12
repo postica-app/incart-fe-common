@@ -8,7 +8,9 @@ export const styles = {
         animated: true,
         "&:focus-within": {
             backgroundColor: "white",
-            lightBorder: true,
+            lightBorder: {
+                withShadow: true,
+            },
         },
         "&:focus-within div": {
             color: "$purple",

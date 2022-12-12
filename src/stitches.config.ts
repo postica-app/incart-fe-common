@@ -19,14 +19,17 @@ export const {
         elevated: () => ({
             boxShadow: "0px 1rem 2rem rgba(0, 0, 0, 0.1)",
         }),
-        lightBorder: (withShadow: boolean) =>
-            withShadow
+        lightBorder: (config: { withShadow?: boolean; color?: string }) =>
+            config.withShadow
                 ? {
                       boxShadow:
-                          "0px 1rem 2rem rgba(0, 0, 0, 0.1), inset 0rem 0rem 0rem 0.5rem $purpleLight",
+                          "0px 1rem 2rem rgba(0, 0, 0, 0.1), inset 0rem 0rem 0rem 0.5rem " +
+                          (config.color || "$purpleLight"),
                   }
                 : {
-                      boxShadow: "inset 0rem 0rem 0rem 0.5rem $purpleLight  ",
+                      boxShadow:
+                          "inset 0rem 0rem 0rem 0.5rem " +
+                          (config.color || "$purpleLight"),
                   },
         animated: () => ({
             transition: "300ms cubic-bezier(0,.67,0,.99)",

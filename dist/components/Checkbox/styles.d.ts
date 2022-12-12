@@ -36,7 +36,10 @@ export declare const styles: {
         elevated: () => {
             boxShadow: string;
         };
-        lightBorder: (withShadow: boolean) => {
+        lightBorder: (config: {
+            withShadow?: boolean | undefined;
+            color?: string | undefined;
+        }) => {
             boxShadow: string;
         };
         animated: () => {

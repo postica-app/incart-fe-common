@@ -34,7 +34,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean;
+        color?: string;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -88,7 +91,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean;
+        color?: string;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -130,7 +136,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean;
+        color?: string;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -190,7 +199,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         elevated: () => {
             boxShadow: string;
         };
-        lightBorder: (withShadow: boolean) => {
+        lightBorder: (config: {
+            withShadow?: boolean;
+            color?: string;
+        }) => {
             boxShadow: string;
         };
         animated: () => {
@@ -231,7 +243,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     elevated: () => {
         boxShadow: string;
     };
-    lightBorder: (withShadow: boolean) => {
+    lightBorder: (config: {
+        withShadow?: boolean;
+        color?: string;
+    }) => {
         boxShadow: string;
     };
     animated: () => {
@@ -272,7 +287,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         elevated: () => {
             boxShadow: string;
         };
-        lightBorder: (withShadow: boolean) => {
+        lightBorder: (config: {
+            withShadow?: boolean;
+            color?: string;
+        }) => {
             boxShadow: string;
         };
         animated: () => {
@@ -418,7 +436,10 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         elevated: () => {
             boxShadow: string;
         };
-        lightBorder: (withShadow: boolean) => {
+        lightBorder: (config: {
+            withShadow?: boolean;
+            color?: string;
+        }) => {
             boxShadow: string;
         };
         animated: () => {
