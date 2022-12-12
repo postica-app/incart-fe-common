@@ -21,7 +21,7 @@ export const Button: React.FC<
                   },
         [props.size]
     )
-    console.log(props)
+
     return (
         <styles.Wrapper {...props}>
             {Icon && <Icon width={iconWidth} />}

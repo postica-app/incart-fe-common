@@ -16,7 +16,7 @@ export const SwitchView: React.FC<
     }
 > = (props) => {
     return (
-        <Vexile gap={2}>
+        <Vexile gap={2} style={{ flex: 1 }}>
             <styles.Background padding={1} gap={3} relative>
                 {props.items.map((item) => (
                     <styles.Item

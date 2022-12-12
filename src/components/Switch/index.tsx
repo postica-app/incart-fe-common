@@ -4,7 +4,7 @@ import { useField } from "formik"
 
 export const useSwitch = (props: SwitchProps) => {
     const [selectedKey, setSelectedKey] = useState<string>(
-        props.selectedKey || props.items[0].key
+        props.selectedKey || props.items[0]?.key
     )
     const [errorMessage, setErrorMessage] = useState<string>()
 
@@ -16,12 +16,16 @@ export const useSwitch = (props: SwitchProps) => {
         selectedKey,
         setSelectedKey,
         setErrorMessage,
-        <SwitchView
-            selectedKey={selectedKey}
-            items={props.items}
-            errorMessage={errorMessage}
-            onClick={onClick}
-        />,
+        props.items.length === 0 ? (
+            <></>
+        ) : (
+            <SwitchView
+                {...props}
+                selectedKey={selectedKey}
+                errorMessage={errorMessage}
+                onClick={onClick}
+            />
+        ),
     ] as const
 }
 
