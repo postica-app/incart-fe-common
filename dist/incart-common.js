@@ -1012,13 +1012,16 @@ const Gn = {
   })
 }, ku = ({
   children: e,
-  icon: r
+  icon: r,
+  ...t
 }) => /* @__PURE__ */ U(Gn.Container, {
   gap: 2,
   padding: 3,
   y: "center",
+  ...t,
   children: [r && /* @__PURE__ */ R(r, {
     width: "6rem",
+    height: "6rem",
     flexShrink: 0
   }), /* @__PURE__ */ R(we, {
     children: e
