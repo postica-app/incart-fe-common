@@ -5,10 +5,10 @@ export declare const styles: {
         ghost?: boolean | "true" | "false" | undefined;
     }, {
         phone: "(max-width: 480px)";
-        tablet: "(max-width: 800px)";
+        tablet: "(max-width: 1200px)";
     }, import("@stitches/react/types/css-util").CSS<{
         phone: "(max-width: 480px)";
-        tablet: "(max-width: 800px)";
+        tablet: "(max-width: 1200px)";
     }, {
         colors: {
             readonly purple: "#6A23C6";

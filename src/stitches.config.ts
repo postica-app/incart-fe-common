@@ -34,6 +34,6 @@ export const {
     },
     media: {
         phone: "(max-width: 480px)",
-        tablet: "(max-width: 800px)",
+        tablet: "(max-width: 1200px)",
     },
 })

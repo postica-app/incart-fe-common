@@ -41,7 +41,7 @@ const gr = {
   },
   media: {
     phone: "(max-width: 480px)",
-    tablet: "(max-width: 800px)"
+    tablet: "(max-width: 1200px)"
   }
 }), Pe = {
   margin: "0px",

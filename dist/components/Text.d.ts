@@ -14,10 +14,10 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     spatial?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, import("@stitches/react/types/css-util").CSS<{
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, {
     colors: {
         readonly purple: "#6A23C6";
@@ -72,10 +72,10 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     spatial?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, import("@stitches/react/types/css-util").CSS<{
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, {
     colors: {
         readonly purple: "#6A23C6";
@@ -130,10 +130,10 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     spatial?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, import("@stitches/react/types/css-util").CSS<{
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, {
     colors: {
         readonly purple: "#6A23C6";
@@ -188,10 +188,10 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     spatial?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, import("@stitches/react/types/css-util").CSS<{
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, {
     colors: {
         readonly purple: "#6A23C6";
@@ -246,10 +246,10 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     spatial?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, import("@stitches/react/types/css-util").CSS<{
     phone: "(max-width: 480px)";
-    tablet: "(max-width: 800px)";
+    tablet: "(max-width: 1200px)";
 }, {
     colors: {
         readonly purple: "#6A23C6";

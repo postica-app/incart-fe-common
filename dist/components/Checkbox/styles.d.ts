@@ -1,10 +1,10 @@
 export declare const styles: {
     Box: import("@stitches/react/types/styled-component").StyledComponent<"input", {}, {
         phone: "(max-width: 480px)";
-        tablet: "(max-width: 800px)";
+        tablet: "(max-width: 1200px)";
     }, import("@stitches/react/types/css-util").CSS<{
         phone: "(max-width: 480px)";
-        tablet: "(max-width: 800px)";
+        tablet: "(max-width: 1200px)";
     }, {
         colors: {
             readonly purple: "#6A23C6";
