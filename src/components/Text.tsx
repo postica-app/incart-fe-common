@@ -54,6 +54,6 @@ export const Text1 = styled("p", {
 })
 
 export const Text2 = styled("p", {
-    fontSize: "4rem",
+    fontSize: "4.5rem",
     ...commonStyle,
 })

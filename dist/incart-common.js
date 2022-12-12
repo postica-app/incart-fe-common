@@ -75,7 +75,7 @@ const gr = {
   fontSize: "5rem",
   ...Pe
 }), we = L("p", {
-  fontSize: "4rem",
+  fontSize: "4.5rem",
   ...Pe
 }), Ln = {
   Wrapper: L("button", {
