@@ -58,6 +58,14 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>>;
 export declare const Header2: import("@stitches/react/types/styled-component").StyledComponent<"h2", {
     purple?: boolean | "true" | undefined;
@@ -118,6 +126,14 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     };
     animated: () => {
         transition: string;
+    };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
     };
 }>>;
 export declare const Header3: import("@stitches/react/types/styled-component").StyledComponent<"h3", {
@@ -180,6 +196,14 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>>;
 export declare const Text1: import("@stitches/react/types/styled-component").StyledComponent<"p", {
     purple?: boolean | "true" | undefined;
@@ -241,6 +265,14 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>>;
 export declare const Text2: import("@stitches/react/types/styled-component").StyledComponent<"p", {
     purple?: boolean | "true" | undefined;
@@ -301,5 +333,13 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     };
     animated: () => {
         transition: string;
+    };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
     };
 }>>;

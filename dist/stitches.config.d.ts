@@ -43,6 +43,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>>(type: Type, ...composers: { [K in keyof Composers]: string extends Composers[K] ? Composers[K] : Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ComponentType<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
         [x: string]: {
@@ -100,6 +108,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>>, css: <Composers extends (string | import("@stitches/react/types/util").Function | import("react").ExoticComponent<any> | import("react").JSXElementConstructor<any> | {
     [name: string]: unknown;
 })[], CSS = import("@stitches/react/types/css-util").CSS<{
@@ -144,6 +160,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     animated: () => {
         transition: string;
+    };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
     };
 }>>(...composers: { [K in keyof Composers]: string extends Composers[K] ? Composers[K] : Composers[K] extends string | import("@stitches/react/types/util").Function | import("react").ExoticComponent<any> | import("react").JSXElementConstructor<any> ? Composers[K] : import("@stitches/react/types/stitches").RemoveIndex<CSS> & {
     variants?: {
@@ -208,6 +232,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         animated: () => {
             transition: string;
         };
+        clickAnimation: () => {
+            animated: boolean;
+            '&:active': {
+                filter: string;
+                boxShadow: string;
+                transform: string;
+            };
+        };
     }>;
 } : K extends `@property ${string}` ? import("@stitches/react/types/css").AtRule.Property : import("@stitches/react/types/css-util").CSS<{
     phone: "(max-width: 480px)";
@@ -252,6 +284,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>; })[]) => () => string, keyframes: (style: {
     [offset: string]: import("@stitches/react/types/css-util").CSS<{
         phone: "(max-width: 480px)";
@@ -295,6 +335,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         animated: () => {
             transition: string;
+        };
+        clickAnimation: () => {
+            animated: boolean;
+            '&:active': {
+                filter: string;
+                boxShadow: string;
+                transform: string;
+            };
         };
     }>;
 }) => {
@@ -444,6 +492,14 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         animated: () => {
             transition: string;
+        };
+        clickAnimation: () => {
+            animated: boolean;
+            '&:active': {
+                filter: string;
+                boxShadow: string;
+                transform: string;
+            };
         };
     };
 };

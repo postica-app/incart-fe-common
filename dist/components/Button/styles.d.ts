@@ -49,5 +49,13 @@ export declare const styles: {
         animated: () => {
             transition: string;
         };
+        clickAnimation: () => {
+            animated: boolean;
+            '&:active': {
+                filter: string;
+                boxShadow: string;
+                transform: string;
+            };
+        };
     }>>;
 };

@@ -46,4 +46,12 @@ export declare const Divider: import("@stitches/react/types/styled-component").S
     animated: () => {
         transition: string;
     };
+    clickAnimation: () => {
+        animated: boolean;
+        '&:active': {
+            filter: string;
+            boxShadow: string;
+            transform: string;
+        };
+    };
 }>>;
