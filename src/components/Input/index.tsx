@@ -11,7 +11,7 @@ type InputProps = Omit<
     >,
     "ref"
 > & {
-    icon: (props: { width: string; flexShrink: number }) => JSX.Element
+    icon?: (props: { width: string; flexShrink: number }) => JSX.Element
     errorMessage?: string
 }
 
@@ -19,9 +19,11 @@ export const Input: React.FC<InputProps> = ({ icon: Icon, ...props }) => (
     <label>
         <Vexile gap={2}>
             <styles.Wrapper>
-                <styles.IconWrapper>
-                    <Icon flexShrink={0} width="6rem" />
-                </styles.IconWrapper>
+                {Icon && (
+                    <styles.IconWrapper>
+                        <Icon flexShrink={0} width="6rem" />
+                    </styles.IconWrapper>
+                )}
                 <styles.LogicalInput {...props} />
             </styles.Wrapper>
             {props.errorMessage && <Text2 blue>{props.errorMessage}</Text2>}

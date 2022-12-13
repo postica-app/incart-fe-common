@@ -2285,7 +2285,6 @@ const $c = ({
     outline: "none",
     backgroundColor: "transparent",
     padding: "3rem",
-    paddingLeft: "2rem",
     flex: 1
   })
 }, Rc = ({
@@ -2295,7 +2294,7 @@ const $c = ({
   children: /* @__PURE__ */ k(V.exports.Vexile, {
     gap: 2,
     children: [/* @__PURE__ */ k(pr.Wrapper, {
-      children: [/* @__PURE__ */ x(pr.IconWrapper, {
+      children: [e && /* @__PURE__ */ x(pr.IconWrapper, {
         children: /* @__PURE__ */ x(e, {
           flexShrink: 0,
           width: "6rem"

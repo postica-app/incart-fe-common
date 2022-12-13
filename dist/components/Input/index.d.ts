@@ -1,6 +1,6 @@
 import React from "react";
 declare type InputProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref"> & {
-    icon: (props: {
+    icon?: (props: {
         width: string;
         flexShrink: number;
     }) => JSX.Element;

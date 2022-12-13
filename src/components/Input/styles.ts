@@ -27,7 +27,6 @@ export const styles = {
         outline: "none",
         backgroundColor: "transparent",
         padding: "3rem",
-        paddingLeft: "2rem",
         flex: 1,
     }),
 }
