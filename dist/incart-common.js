@@ -2464,7 +2464,7 @@ const $c = ({
         keepsize: !0,
         children: [/* @__PURE__ */ k(vr, {
           purple: !0,
-          children: ["\uFFE6", e.price.toLocaleString()]
+          children: ["\uFFE6", (e.price + ((s == null ? void 0 : s.priceDelta) || 0)).toLocaleString()]
         }), /* @__PURE__ */ x(Gn, {
           icon: (l) => /* @__PURE__ */ x(Pc, {
             style: l

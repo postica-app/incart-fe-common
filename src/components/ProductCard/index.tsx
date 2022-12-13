@@ -1,14 +1,14 @@
-import { Hexile, Vexile } from "@haechi/flexile"
-import Button from "../Button"
-import { Divider } from "../Divider"
-import useSwitch from "../Switch"
-import { Header2, Text2 } from "../Text"
-import Cart from "../../icons/Cart.svg"
-import Info from "../../icons/Info.svg"
-import Styles from "./styles"
-import { useMemo } from "react"
-import Callout from "../Callout"
-import { ProductType } from "../../types"
+import { Hexile, Vexile } from '@haechi/flexile'
+import Button from '../Button'
+import { Divider } from '../Divider'
+import useSwitch from '../Switch'
+import { Header2, Text2 } from '../Text'
+import Cart from '../../icons/Cart.svg'
+import Info from '../../icons/Info.svg'
+import Styles from './styles'
+import { useMemo } from 'react'
+import Callout from '../Callout'
+import { ProductType } from '../../types'
 
 export const ProductCard: React.FC<{
     product: ProductType
@@ -44,7 +44,12 @@ export const ProductCard: React.FC<{
                     </Hexile>
                 )}
                 <Hexile y="center" gap={4} keepsize>
-                    <Header2 purple>￦{product.price.toLocaleString()}</Header2>
+                    <Header2 purple>
+                        ￦
+                        {(
+                            product.price + (selectedOption?.priceDelta || 0)
+                        ).toLocaleString()}
+                    </Header2>
                     <Button
                         icon={(style) => <Cart style={style} />}
                         onClick={onPurchase}
