@@ -1,6 +1,6 @@
 import An, { createStitches as Fn } from "@stitches/react";
 import * as K from "react";
-import St, { useMemo as wt, createContext as In, forwardRef as Mn, createElement as $t, useContext as Dn, useEffect as hr, Children as Rt, Component as kn, useState as Br, useCallback as Ln } from "react";
+import St, { useMemo as wt, createContext as In, useContext as Mn, forwardRef as Dn, createElement as $t, useEffect as hr, Children as Rt, Component as kn, useState as Br, useCallback as Ln } from "react";
 const gr = {
   purple: "#6A23C6",
   purpleLight: "#E5D4FA",
@@ -2019,7 +2019,7 @@ Ze.displayName = "FormikContext";
 Ze.Provider;
 Ze.Consumer;
 function un() {
-  var e = Dn(Ze);
+  var e = Mn(Ze);
   return e || (process.env.NODE_ENV !== "production" ? fe(!1, "Formik context is undefined, please verify you are calling useFormikContext() as child of a <Formik> component.") : fe(!1)), e;
 }
 function Pr(e) {
@@ -2034,7 +2034,7 @@ function Pr(e) {
     };
   }, [i, s, h, p]), process.env.NODE_ENV !== "production" && (r || (process.env.NODE_ENV !== "production" ? fe(!1, "useField() / <Field /> must be used underneath a <Formik> component or withFormik() higher order component") : fe(!1))), h || (process.env.NODE_ENV !== "production" ? fe(!1, "Invalid field name. Either pass `useField` a string or an object containing a `name` key.") : fe(!1)), [t(l), o(h), a(h)];
 }
-var Tc = /* @__PURE__ */ Mn(function(e, r) {
+var Tc = /* @__PURE__ */ Dn(function(e, r) {
   var t = e.action, o = sn(e, ["action"]), a = t != null ? t : "#", i = un(), s = i.handleReset, u = i.handleSubmit;
   return $t("form", Object.assign({
     onSubmit: u,
@@ -2490,6 +2490,7 @@ export {
   Hc as FInput,
   Gc as FSwitch,
   Bc as FormField,
+  Ze as FormikContext,
   Uc as Header1,
   vr as Header2,
   Nn as Header3,
@@ -2499,5 +2500,6 @@ export {
   re as Text2,
   Lc as keyframes,
   L as styled,
+  un as useFormikContext,
   fn as useSwitch
 };
