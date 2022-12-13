@@ -23,7 +23,10 @@ export const Button: React.FC<
     )
 
     return (
-        <styles.Wrapper {...props} disabled={!props.active}>
+        <styles.Wrapper
+            {...props}
+            disabled={props.active === false || props.active === "false"}
+        >
             {Icon && <Icon width={iconWidth} />}
             <TextComponent>{text}</TextComponent>
         </styles.Wrapper>

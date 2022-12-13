@@ -824,7 +824,7 @@ const $t = Be.exports.Fragment, R = Be.exports.jsx, U = Be.exports.jsxs, Wn = /*
   }, [t.size]);
   return /* @__PURE__ */ U(Ln.Wrapper, {
     ...t,
-    disabled: !t.active,
+    disabled: t.active === !1 || t.active === "false",
     children: [r && /* @__PURE__ */ R(r, {
       width: a
     }), /* @__PURE__ */ R(o, {
