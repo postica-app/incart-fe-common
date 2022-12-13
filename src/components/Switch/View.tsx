@@ -1,7 +1,6 @@
 import styles from "./styles"
 import { Item } from "../../types"
 import { Text2 } from "../Text"
-import { useEffect } from "react"
 import { Vexile } from "@haechi/flexile"
 
 export interface SwitchProps {
