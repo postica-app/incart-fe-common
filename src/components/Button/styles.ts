@@ -9,6 +9,7 @@ export const styles = {
         border: "none",
         alignItems: "center",
         justifyContent: "center",
+        animated: true,
         compoundVariants: [
             {
                 ghost: true,
@@ -17,6 +18,11 @@ export const styles = {
                     border: "0.5rem solid $purpleLight",
                     color: "$purple",
                     backgroundColor: "white",
+                    elevated: true,
+                    "&:active": {
+                        filter: "blur(1px) brightness(97%) saturate(90%)",
+                        boxShadow: "inset 0px 1rem 2rem rgba(0, 0, 0, 0.1)",
+                    },
                 },
             },
             {
@@ -32,6 +38,9 @@ export const styles = {
                 ghost: false,
                 active: true,
                 css: {
+                    "&:active": {
+                        filter: "brightness(150%) saturate(80%)",
+                    },
                     backgroundColor: "$purple",
                     color: "white",
                 },
@@ -58,25 +67,18 @@ export const styles = {
             },
             active: {
                 false: {
-                    // "--border-color": "$purpleLight",
-                    // "--fill-color": "$purple",
+                    cursor: "not-allowed",
                 },
                 true: {
-                    // "--border-color": "$grey2",
-                    // "--fill-color": "$grey4",
+                    cursor: "pointer",
+                    "&:active": {
+                        transform: "scale(0.98)",
+                    },
                 },
             },
             ghost: {
-                true: {
-                    // border: "0.5rem solid var(--fill-color)",
-                    // color: "var(--fill-color)",
-                    // backgroundColor: "white",
-                    elevated: true,
-                },
-                false: {
-                    // backgroundColor: "var(--fill-color)",
-                    // color: "white",
-                },
+                true: {},
+                false: {},
             },
         },
         defaultVariants: {
