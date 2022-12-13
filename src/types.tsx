@@ -19,7 +19,7 @@ export interface ProductType {
     }[]
 }
 
-export interface Store {
+export interface StoreType {
     name: string
     payment_receive_account: {
         bankAccount: {
