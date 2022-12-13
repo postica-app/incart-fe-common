@@ -2289,7 +2289,8 @@ const $c = ({
   })
 }, Rc = ({
   icon: e,
-  ...r
+  errorMessage: r,
+  ...t
 }) => /* @__PURE__ */ x("label", {
   children: /* @__PURE__ */ k(V.exports.Vexile, {
     gap: 2,
@@ -2300,11 +2301,11 @@ const $c = ({
           width: "6rem"
         })
       }), /* @__PURE__ */ x(pr.LogicalInput, {
-        ...r
+        ...t
       })]
-    }), r.errorMessage && /* @__PURE__ */ x(re, {
+    }), r && /* @__PURE__ */ x(re, {
       blue: !0,
-      children: r.errorMessage
+      children: r
     })]
   })
 }), Hc = (e) => {

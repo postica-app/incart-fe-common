@@ -15,7 +15,11 @@ type InputProps = Omit<
     errorMessage?: string
 }
 
-export const Input: React.FC<InputProps> = ({ icon: Icon, ...props }) => (
+export const Input: React.FC<InputProps> = ({
+    icon: Icon,
+    errorMessage,
+    ...props
+}) => (
     <label>
         <Vexile gap={2}>
             <styles.Wrapper>
@@ -26,7 +30,7 @@ export const Input: React.FC<InputProps> = ({ icon: Icon, ...props }) => (
                 )}
                 <styles.LogicalInput {...props} />
             </styles.Wrapper>
-            {props.errorMessage && <Text2 blue>{props.errorMessage}</Text2>}
+            {errorMessage && <Text2 blue>{errorMessage}</Text2>}
         </Vexile>
     </label>
 )
