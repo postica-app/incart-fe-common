@@ -1,10 +1,10 @@
 import styles from "./styles"
-import { Item } from "../../types"
+import { ItemType } from "../../types"
 import { Text2 } from "../Text"
 import { Vexile } from "@haechi/flexile"
 
 export interface SwitchProps {
-    items: Item[]
+    items: ItemType[]
     selectedKey?: string
     onClick?: (selectedKey: string) => void
 }

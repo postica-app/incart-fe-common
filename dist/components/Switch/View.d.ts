@@ -1,6 +1,6 @@
-import { Item } from "../../types";
+import { ItemType } from "../../types";
 export interface SwitchProps {
-    items: Item[];
+    items: ItemType[];
     selectedKey?: string;
     onClick?: (selectedKey: string) => void;
 }

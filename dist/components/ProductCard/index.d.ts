@@ -1,18 +1,5 @@
-interface Product {
-    name: string;
-    info?: string;
-    option?: {
-        name: string;
-        options: {
-            label: string;
-            delta?: number;
-            info?: string;
-        }[];
-    };
-    price: number;
-}
+import { ProductType } from "../../types";
 export declare const ProductCard: React.FC<{
-    product: Product;
+    product: ProductType;
     onPurchase?: () => void;
 }>;
-export {};

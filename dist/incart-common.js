@@ -2430,12 +2430,12 @@ const $c = ({
 }) => {
   var u;
   const [t, o, a, i] = fn({
-    items: ((u = e.option) == null ? void 0 : u.options.map((l) => ({
-      key: l.label
+    items: ((u = e.options) == null ? void 0 : u[0].items.map((l) => ({
+      key: l.name
     }))) || []
   }), s = wt(() => {
     var l;
-    return (l = e.option) == null ? void 0 : l.options.find((h) => h.label === t);
+    return (l = e.options) == null ? void 0 : l[0].items.find((h) => h.name === t);
   }, [t, e]);
   return /* @__PURE__ */ k(Fc.Wrapper, {
     padding: 6,
@@ -2451,12 +2451,12 @@ const $c = ({
       x: "right",
       y: "center",
       gap: 6,
-      children: [e.option && /* @__PURE__ */ k(V.exports.Hexile, {
+      children: [e.options && /* @__PURE__ */ k(V.exports.Hexile, {
         gap: 6,
         y: "center",
         fillx: !0,
         children: [/* @__PURE__ */ x(re, {
-          children: e.option.name
+          children: e.options[0].name
         }), i]
       }), /* @__PURE__ */ k(V.exports.Hexile, {
         y: "center",

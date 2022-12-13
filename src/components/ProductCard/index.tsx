@@ -8,36 +8,23 @@ import Info from "../../icons/Info.svg"
 import Styles from "./styles"
 import { useMemo } from "react"
 import Callout from "../Callout"
-
-interface Product {
-    name: string
-    info?: string
-    option?: {
-        name: string
-        options: {
-            label: string
-            delta?: number
-            info?: string
-        }[]
-    }
-    price: number
-}
+import { ProductType } from "../../types"
 
 export const ProductCard: React.FC<{
-    product: Product
+    product: ProductType
     onPurchase?: () => void
 }> = ({ product, onPurchase }) => {
     const [selectedOptionKey, _, __, Switch] = useSwitch({
         items:
-            product.option?.options.map((option) => ({
-                key: option.label,
+            product.options?.[0].items.map((option) => ({
+                key: option.name,
             })) || [],
     })
 
     const selectedOption = useMemo(
         () =>
-            product.option?.options.find(
-                (option) => option.label === selectedOptionKey
+            product.options?.[0].items.find(
+                (option) => option.name === selectedOptionKey
             ),
         [selectedOptionKey, product]
     )
@@ -50,9 +37,9 @@ export const ProductCard: React.FC<{
             </Vexile>
             <Divider />
             <Hexile x="right" y="center" gap={6}>
-                {product.option && (
+                {product.options && (
                     <Hexile gap={6} y="center" fillx>
-                        <Text2>{product.option.name}</Text2>
+                        <Text2>{product.options[0].name}</Text2>
                         {Switch}
                     </Hexile>
                 )}
