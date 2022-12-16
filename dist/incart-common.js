@@ -2507,6 +2507,7 @@ export {
   Kc as ProductCard,
   Vn as Text1,
   re as Text2,
+  gr as colors,
   Lc as keyframes,
   L as styled,
   jr as useField,
