@@ -1,17 +1,27 @@
-import colors from "../colors"
-import { styled } from "../stitches.config"
+import colors from '../colors'
+import { styled } from '../stitches.config'
 
 const commonStyle = {
-    margin: "0px",
+    margin: '0px',
     variants: {
         white: {
             true: {
-                color: "white",
+                color: 'white',
             },
         },
         spatial: {
             true: {
                 lineHeight: 1.5,
+            },
+        },
+        center: {
+            true: {
+                textAlign: 'center',
+            },
+        },
+        right: {
+            true: {
+                textAlign: 'right',
             },
         },
         ...(Object.fromEntries(
@@ -33,27 +43,27 @@ const commonStyle = {
     },
 }
 
-export const Header1 = styled("h1", {
-    fontSize: "6rem",
+export const Header1 = styled('h1', {
+    fontSize: '6rem',
     ...commonStyle,
 })
 
-export const Header2 = styled("h2", {
-    fontSize: "5rem",
+export const Header2 = styled('h2', {
+    fontSize: '5rem',
     ...commonStyle,
 })
 
-export const Header3 = styled("h3", {
-    fontSize: "4rem",
+export const Header3 = styled('h3', {
+    fontSize: '4rem',
     ...commonStyle,
 })
 
-export const Text1 = styled("p", {
-    fontSize: "5rem",
+export const Text1 = styled('p', {
+    fontSize: '5rem',
     ...commonStyle,
 })
 
-export const Text2 = styled("p", {
-    fontSize: "4.5rem",
+export const Text2 = styled('p', {
+    fontSize: '4.5rem',
     ...commonStyle,
 })

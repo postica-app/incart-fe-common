@@ -65,6 +65,16 @@ const gr = {
         lineHeight: 1.5
       }
     },
+    center: {
+      true: {
+        textAlign: "center"
+      }
+    },
+    right: {
+      true: {
+        textAlign: "right"
+      }
+    },
     ...Object.fromEntries(Object.entries(gr).map(([e, r]) => [e, {
       true: {
         color: r
@@ -394,13 +404,13 @@ function Bn() {
 ` + _e + n;
       }
     }
-    var Ee = !1, ie;
+    var xe = !1, ie;
     {
       var nr = typeof WeakMap == "function" ? WeakMap : Map;
       ie = new nr();
     }
     function g(n, c) {
-      if (!n || Ee)
+      if (!n || xe)
         return "";
       {
         var f = ie.get(n);
@@ -408,7 +418,7 @@ function Bn() {
           return f;
       }
       var v;
-      Ee = !0;
+      xe = !0;
       var _ = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
       var C;
@@ -465,12 +475,12 @@ function Bn() {
             }
         }
       } finally {
-        Ee = !1, be.current = C, tr(), Error.prepareStackTrace = _;
+        xe = !1, be.current = C, tr(), Error.prepareStackTrace = _;
       }
       var ue = n ? n.displayName || n.name : "", Wr = ue ? ae(ue) : "";
       return typeof n == "function" && ie.set(n, Wr), Wr;
     }
-    function xe(n, c, f) {
+    function Ee(n, c, f) {
       return g(n, !1);
     }
     function se(n) {
@@ -493,7 +503,7 @@ function Bn() {
       if (typeof n == "object")
         switch (n.$$typeof) {
           case l:
-            return xe(n.render);
+            return Ee(n.render);
           case m:
             return Q(n.type, c, f);
           case w: {
@@ -597,7 +607,7 @@ function Bn() {
         });
       }
     }
-    function En(n, c) {
+    function xn(n, c) {
       {
         var f = function() {
           Dr || (Dr = !0, j("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", c));
@@ -608,7 +618,7 @@ function Bn() {
         });
       }
     }
-    var xn = function(n, c, f, v, _, C, b) {
+    var En = function(n, c, f, v, _, C, b) {
       var y = {
         $$typeof: r,
         type: n,
@@ -647,9 +657,9 @@ function Bn() {
         }
         if (y || z) {
           var A = typeof n == "function" ? n.displayName || n.name || "Unknown" : n;
-          y && _n(b, A), z && En(b, A);
+          y && _n(b, A), z && xn(b, A);
         }
-        return xn(n, y, z, _, v, Te.current, b);
+        return En(n, y, z, _, v, Te.current, b);
       }
     }
     var ir = I.ReactCurrentOwner, Lr = I.ReactDebugCurrentFrame;
@@ -1178,10 +1188,10 @@ G.prototype.delete = mo;
 G.prototype.get = yo;
 G.prototype.has = bo;
 G.prototype.set = _o;
-function Eo() {
+function xo() {
   this.__data__ = new G(), this.size = 0;
 }
-function xo(e) {
+function Eo(e) {
   var r = this.__data__, t = r.delete(e);
   return this.size = r.size, t;
 }
@@ -1339,8 +1349,8 @@ function ve(e) {
   var r = this.__data__ = new G(e);
   this.size = r.size;
 }
-ve.prototype.clear = Eo;
-ve.prototype.delete = xo;
+ve.prototype.clear = xo;
+ve.prototype.delete = Eo;
 ve.prototype.get = To;
 ve.prototype.has = Co;
 ve.prototype.set = ca;
@@ -1399,7 +1409,7 @@ const Ie = ba;
 function _a() {
   return !1;
 }
-var Nt = typeof exports == "object" && exports && !exports.nodeType && exports, et = Nt && typeof module == "object" && module && !module.nodeType && module, Ea = et && et.exports === Nt, rt = Ea ? W.Buffer : void 0, xa = rt ? rt.isBuffer : void 0, Ta = xa || _a;
+var Nt = typeof exports == "object" && exports && !exports.nodeType && exports, et = Nt && typeof module == "object" && module && !module.nodeType && module, xa = et && et.exports === Nt, rt = xa ? W.Buffer : void 0, Ea = rt ? rt.isBuffer : void 0, Ta = Ea || _a;
 const Vt = Ta;
 var Ca = 9007199254740991, Sa = /^(?:0|[1-9]\d*)$/;
 function wa(e, r) {
@@ -1416,7 +1426,7 @@ $[Ra] = $[Oa] = $[za] = $[Aa] = $[Ya] = $[ja] = $[Pa] = $[Fa] = $[Ia] = $[Ma] = 
 function Ja(e) {
   return ge(e) && zt(e.length) && !!$[he(e)];
 }
-function xr(e) {
+function Er(e) {
   return function(r) {
     return e(r);
   };
@@ -1429,7 +1439,7 @@ var Yt = typeof exports == "object" && exports && !exports.nodeType && exports, 
   }
 }();
 const de = ei;
-var tt = de && de.isTypedArray, ri = tt ? xr(tt) : Ja;
+var tt = de && de.isTypedArray, ri = tt ? Er(tt) : Ja;
 const ti = ri;
 var ni = Object.prototype, oi = ni.hasOwnProperty;
 function Ut(e, r) {
@@ -1508,12 +1518,12 @@ function bi(e, r) {
 function Gt() {
   return [];
 }
-var _i = Object.prototype, Ei = _i.propertyIsEnumerable, it = Object.getOwnPropertySymbols, xi = it ? function(e) {
+var _i = Object.prototype, xi = _i.propertyIsEnumerable, it = Object.getOwnPropertySymbols, Ei = it ? function(e) {
   return e == null ? [] : (e = Object(e), bi(it(e), function(r) {
-    return Ei.call(e, r);
+    return xi.call(e, r);
   }));
 } : Gt;
-const wr = xi;
+const wr = Ei;
 function Ti(e, r) {
   return qe(e, wr(e), r);
 }
@@ -1548,9 +1558,9 @@ const br = Ai;
 var ji = oe(W, "Set");
 const _r = ji;
 var Pi = oe(W, "WeakMap");
-const Er = Pi;
-var st = "[object Map]", Fi = "[object Object]", ct = "[object Promise]", ut = "[object Set]", lt = "[object WeakMap]", ft = "[object DataView]", Ii = ne(yr), Mi = ne(Oe), ki = ne(br), Di = ne(_r), Li = ne(Er), ee = he;
-(yr && ee(new yr(new ArrayBuffer(1))) != ft || Oe && ee(new Oe()) != st || br && ee(br.resolve()) != ct || _r && ee(new _r()) != ut || Er && ee(new Er()) != lt) && (ee = function(e) {
+const xr = Pi;
+var st = "[object Map]", Fi = "[object Object]", ct = "[object Promise]", ut = "[object Set]", lt = "[object WeakMap]", ft = "[object DataView]", Ii = ne(yr), Mi = ne(Oe), ki = ne(br), Di = ne(_r), Li = ne(xr), ee = he;
+(yr && ee(new yr(new ArrayBuffer(1))) != ft || Oe && ee(new Oe()) != st || br && ee(br.resolve()) != ct || _r && ee(new _r()) != ut || xr && ee(new xr()) != lt) && (ee = function(e) {
   var r = he(e), t = r == Fi ? e.constructor : void 0, o = t ? ne(t) : "";
   if (o)
     switch (o) {
@@ -1651,13 +1661,13 @@ var ms = "[object Map]";
 function ys(e) {
   return ge(e) && $r(e) == ms;
 }
-var vt = de && de.isMap, bs = vt ? xr(vt) : ys;
+var vt = de && de.isMap, bs = vt ? Er(vt) : ys;
 const _s = bs;
-var Es = "[object Set]";
-function xs(e) {
-  return ge(e) && $r(e) == Es;
+var xs = "[object Set]";
+function Es(e) {
+  return ge(e) && $r(e) == xs;
 }
-var mt = de && de.isSet, Ts = mt ? xr(mt) : xs;
+var mt = de && de.isSet, Ts = mt ? Er(mt) : Es;
 const Cs = Ts;
 var Ss = 1, ws = 2, $s = 4, Xt = "[object Arguments]", Rs = "[object Array]", Os = "[object Boolean]", As = "[object Date]", js = "[object Error]", Jt = "[object Function]", Ps = "[object GeneratorFunction]", Fs = "[object Map]", Is = "[object Number]", Qt = "[object Object]", Ms = "[object RegExp]", ks = "[object Set]", Ds = "[object String]", Ls = "[object Symbol]", Ns = "[object WeakMap]", Vs = "[object ArrayBuffer]", zs = "[object DataView]", Ys = "[object Float32Array]", Us = "[object Float64Array]", Ws = "[object Int8Array]", Bs = "[object Int16Array]", Hs = "[object Int32Array]", Gs = "[object Uint8Array]", Ks = "[object Uint8ClampedArray]", qs = "[object Uint16Array]", Zs = "[object Uint32Array]", S = {};
 S[Xt] = S[Rs] = S[Vs] = S[zs] = S[Os] = S[As] = S[Ys] = S[Us] = S[Ws] = S[Bs] = S[Hs] = S[Fs] = S[Is] = S[Qt] = S[Ms] = S[ks] = S[Ds] = S[Ls] = S[Gs] = S[Ks] = S[qs] = S[Zs] = !0;
@@ -1777,7 +1787,7 @@ function fe(e, r) {
     }
   }
 }
-var nn = { exports: {} }, E = {};
+var nn = { exports: {} }, x = {};
 /** @license React v16.13.1
  * react-is.production.min.js
  *
@@ -1786,11 +1796,11 @@ var nn = { exports: {} }, E = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var Et;
+var xt;
 function fc() {
-  if (Et)
-    return E;
-  Et = 1;
+  if (xt)
+    return x;
+  xt = 1;
   var e = typeof Symbol == "function" && Symbol.for, r = e ? Symbol.for("react.element") : 60103, t = e ? Symbol.for("react.portal") : 60106, o = e ? Symbol.for("react.fragment") : 60107, a = e ? Symbol.for("react.strict_mode") : 60108, i = e ? Symbol.for("react.profiler") : 60114, s = e ? Symbol.for("react.provider") : 60109, u = e ? Symbol.for("react.context") : 60110, l = e ? Symbol.for("react.async_mode") : 60111, h = e ? Symbol.for("react.concurrent_mode") : 60111, p = e ? Symbol.for("react.forward_ref") : 60112, m = e ? Symbol.for("react.suspense") : 60113, w = e ? Symbol.for("react.suspense_list") : 60120, R = e ? Symbol.for("react.memo") : 60115, P = e ? Symbol.for("react.lazy") : 60116, N = e ? Symbol.for("react.block") : 60121, F = e ? Symbol.for("react.fundamental") : 60117, I = e ? Symbol.for("react.responder") : 60118, j = e ? Symbol.for("react.scope") : 60119;
   function k(d) {
     if (typeof d == "object" && d !== null) {
@@ -1825,35 +1835,35 @@ function fc() {
   function M(d) {
     return k(d) === h;
   }
-  return E.AsyncMode = l, E.ConcurrentMode = h, E.ContextConsumer = u, E.ContextProvider = s, E.Element = r, E.ForwardRef = p, E.Fragment = o, E.Lazy = P, E.Memo = R, E.Portal = t, E.Profiler = i, E.StrictMode = a, E.Suspense = m, E.isAsyncMode = function(d) {
+  return x.AsyncMode = l, x.ConcurrentMode = h, x.ContextConsumer = u, x.ContextProvider = s, x.Element = r, x.ForwardRef = p, x.Fragment = o, x.Lazy = P, x.Memo = R, x.Portal = t, x.Profiler = i, x.StrictMode = a, x.Suspense = m, x.isAsyncMode = function(d) {
     return M(d) || k(d) === l;
-  }, E.isConcurrentMode = M, E.isContextConsumer = function(d) {
+  }, x.isConcurrentMode = M, x.isContextConsumer = function(d) {
     return k(d) === u;
-  }, E.isContextProvider = function(d) {
+  }, x.isContextProvider = function(d) {
     return k(d) === s;
-  }, E.isElement = function(d) {
+  }, x.isElement = function(d) {
     return typeof d == "object" && d !== null && d.$$typeof === r;
-  }, E.isForwardRef = function(d) {
+  }, x.isForwardRef = function(d) {
     return k(d) === p;
-  }, E.isFragment = function(d) {
+  }, x.isFragment = function(d) {
     return k(d) === o;
-  }, E.isLazy = function(d) {
+  }, x.isLazy = function(d) {
     return k(d) === P;
-  }, E.isMemo = function(d) {
+  }, x.isMemo = function(d) {
     return k(d) === R;
-  }, E.isPortal = function(d) {
+  }, x.isPortal = function(d) {
     return k(d) === t;
-  }, E.isProfiler = function(d) {
+  }, x.isProfiler = function(d) {
     return k(d) === i;
-  }, E.isStrictMode = function(d) {
+  }, x.isStrictMode = function(d) {
     return k(d) === a;
-  }, E.isSuspense = function(d) {
+  }, x.isSuspense = function(d) {
     return k(d) === m;
-  }, E.isValidElementType = function(d) {
+  }, x.isValidElementType = function(d) {
     return typeof d == "string" || typeof d == "function" || d === o || d === h || d === i || d === a || d === m || d === w || typeof d == "object" && d !== null && (d.$$typeof === P || d.$$typeof === R || d.$$typeof === s || d.$$typeof === u || d.$$typeof === p || d.$$typeof === F || d.$$typeof === I || d.$$typeof === j || d.$$typeof === N);
-  }, E.typeOf = k, E;
+  }, x.typeOf = k, x;
 }
-var x = {};
+var E = {};
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -1862,17 +1872,17 @@ var x = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var xt;
+var Et;
 function dc() {
-  return xt || (xt = 1, process.env.NODE_ENV !== "production" && function() {
+  return Et || (Et = 1, process.env.NODE_ENV !== "production" && function() {
     var e = typeof Symbol == "function" && Symbol.for, r = e ? Symbol.for("react.element") : 60103, t = e ? Symbol.for("react.portal") : 60106, o = e ? Symbol.for("react.fragment") : 60107, a = e ? Symbol.for("react.strict_mode") : 60108, i = e ? Symbol.for("react.profiler") : 60114, s = e ? Symbol.for("react.provider") : 60109, u = e ? Symbol.for("react.context") : 60110, l = e ? Symbol.for("react.async_mode") : 60111, h = e ? Symbol.for("react.concurrent_mode") : 60111, p = e ? Symbol.for("react.forward_ref") : 60112, m = e ? Symbol.for("react.suspense") : 60113, w = e ? Symbol.for("react.suspense_list") : 60120, R = e ? Symbol.for("react.memo") : 60115, P = e ? Symbol.for("react.lazy") : 60116, N = e ? Symbol.for("react.block") : 60121, F = e ? Symbol.for("react.fundamental") : 60117, I = e ? Symbol.for("react.responder") : 60118, j = e ? Symbol.for("react.scope") : 60119;
     function k(g) {
       return typeof g == "string" || typeof g == "function" || g === o || g === h || g === i || g === a || g === m || g === w || typeof g == "object" && g !== null && (g.$$typeof === P || g.$$typeof === R || g.$$typeof === s || g.$$typeof === u || g.$$typeof === p || g.$$typeof === F || g.$$typeof === I || g.$$typeof === j || g.$$typeof === N);
     }
     function M(g) {
       if (typeof g == "object" && g !== null) {
-        var xe = g.$$typeof;
-        switch (xe) {
+        var Ee = g.$$typeof;
+        switch (Ee) {
           case r:
             var se = g.type;
             switch (se) {
@@ -1893,11 +1903,11 @@ function dc() {
                   case s:
                     return Q;
                   default:
-                    return xe;
+                    return Ee;
                 }
             }
           case t:
-            return xe;
+            return Ee;
         }
       }
     }
@@ -1932,7 +1942,7 @@ function dc() {
     function ae(g) {
       return M(g) === t;
     }
-    function Ee(g) {
+    function xe(g) {
       return M(g) === i;
     }
     function ie(g) {
@@ -1941,8 +1951,8 @@ function dc() {
     function nr(g) {
       return M(g) === m;
     }
-    x.AsyncMode = d, x.ConcurrentMode = X, x.ContextConsumer = Xe, x.ContextProvider = Je, x.Element = Me, x.ForwardRef = Qe, x.Fragment = er, x.Lazy = ke, x.Memo = U, x.Portal = B, x.Profiler = J, x.StrictMode = De, x.Suspense = Le, x.isAsyncMode = Ne, x.isConcurrentMode = ye, x.isContextConsumer = Ve, x.isContextProvider = ze, x.isElement = Ye, x.isForwardRef = rr, x.isFragment = tr, x.isLazy = be, x.isMemo = _e, x.isPortal = ae, x.isProfiler = Ee, x.isStrictMode = ie, x.isSuspense = nr, x.isValidElementType = k, x.typeOf = M;
-  }()), x;
+    E.AsyncMode = d, E.ConcurrentMode = X, E.ContextConsumer = Xe, E.ContextProvider = Je, E.Element = Me, E.ForwardRef = Qe, E.Fragment = er, E.Lazy = ke, E.Memo = U, E.Portal = B, E.Profiler = J, E.StrictMode = De, E.Suspense = Le, E.isAsyncMode = Ne, E.isConcurrentMode = ye, E.isContextConsumer = Ve, E.isContextProvider = ze, E.isElement = Ye, E.isForwardRef = rr, E.isFragment = tr, E.isLazy = be, E.isMemo = _e, E.isPortal = ae, E.isProfiler = xe, E.isStrictMode = ie, E.isSuspense = nr, E.isValidElementType = k, E.typeOf = M;
+  }()), E;
 }
 (function(e) {
   process.env.NODE_ENV === "production" ? e.exports = fc() : e.exports = dc();
@@ -2001,7 +2011,7 @@ var Ct = function(r) {
   return r !== null && typeof r == "object";
 }, _c = function(r) {
   return String(Math.floor(Number(r))) === r;
-}, Ec = function(r) {
+}, xc = function(r) {
   return Rt.count(r) === 0;
 };
 function le(e, r, t, o) {
@@ -2042,7 +2052,7 @@ function jr(e) {
     };
   }, [i, s, h, p]), process.env.NODE_ENV !== "production" && (r || (process.env.NODE_ENV !== "production" ? fe(!1, "useField() / <Field /> must be used underneath a <Formik> component or withFormik() higher order component") : fe(!1))), h || (process.env.NODE_ENV !== "production" ? fe(!1, "Invalid field name. Either pass `useField` a string or an object containing a `name` key.") : fe(!1)), [t(l), o(h), a(h)];
 }
-var xc = /* @__PURE__ */ kn(function(e, r) {
+var Ec = /* @__PURE__ */ kn(function(e, r) {
   var t = e.action, o = sn(e, ["action"]), a = t != null ? t : "#", i = un(), s = i.handleReset, u = i.handleSubmit;
   return $t("form", Object.assign({
     onSubmit: u,
@@ -2051,7 +2061,7 @@ var xc = /* @__PURE__ */ kn(function(e, r) {
     action: a
   }, o));
 });
-xc.displayName = "Form";
+Ec.displayName = "Form";
 var Tc = function(r, t, o) {
   var a = pe(r), i = a[t];
   return a.splice(t, 1), a.splice(o, 0, i), a;
@@ -2207,7 +2217,7 @@ var Tc = function(r, t, o) {
       form: m,
       name: h
     });
-    return s ? $t(s, w) : u ? u(w) : l ? typeof l == "function" ? l(w) : Ec(l) ? null : Rt.only(l) : null;
+    return s ? $t(s, w) : u ? u(w) : l ? typeof l == "function" ? l(w) : xc(l) ? null : Rt.only(l) : null;
   }, r;
 }(Dn);
 wc.defaultProps = {

@@ -12,6 +12,8 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     grey5?: boolean | "true" | undefined;
     white?: boolean | "true" | undefined;
     spatial?: boolean | "true" | undefined;
+    center?: boolean | "true" | undefined;
+    right?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -81,6 +83,8 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     grey5?: boolean | "true" | undefined;
     white?: boolean | "true" | undefined;
     spatial?: boolean | "true" | undefined;
+    center?: boolean | "true" | undefined;
+    right?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -150,6 +154,8 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     grey5?: boolean | "true" | undefined;
     white?: boolean | "true" | undefined;
     spatial?: boolean | "true" | undefined;
+    center?: boolean | "true" | undefined;
+    right?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -219,6 +225,8 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     grey5?: boolean | "true" | undefined;
     white?: boolean | "true" | undefined;
     spatial?: boolean | "true" | undefined;
+    center?: boolean | "true" | undefined;
+    right?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -288,6 +296,8 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     grey5?: boolean | "true" | undefined;
     white?: boolean | "true" | undefined;
     spatial?: boolean | "true" | undefined;
+    center?: boolean | "true" | undefined;
+    right?: boolean | "true" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
