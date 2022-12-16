@@ -12,7 +12,7 @@ import { ProductType } from '../../types'
 
 export const ProductCard: React.FC<{
     product: ProductType
-    onPurchase?: () => void
+    onPurchase?: (selectedOptionKey?: string) => void
 }> = ({ product, onPurchase }) => {
     const [selectedOptionKey, _, __, Switch] = useSwitch({
         items:
@@ -52,7 +52,7 @@ export const ProductCard: React.FC<{
                     </Header2>
                     <Button
                         icon={(style) => <Cart style={style} />}
-                        onClick={onPurchase}
+                        onClick={() => onPurchase?.(selectedOptionKey)}
                     >
                         구매하기
                     </Button>

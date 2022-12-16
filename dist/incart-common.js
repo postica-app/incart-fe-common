@@ -2478,7 +2478,7 @@ const $c = ({
           icon: (l) => /* @__PURE__ */ T(jc, {
             style: l
           }),
-          onClick: r,
+          onClick: () => r == null ? void 0 : r(t),
           children: "\uAD6C\uB9E4\uD558\uAE30"
         })]
       })]
