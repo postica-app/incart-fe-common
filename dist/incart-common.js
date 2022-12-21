@@ -833,19 +833,20 @@ const Ot = He.exports.Fragment, T = He.exports.jsx, D = He.exports.jsxs, Hn = /*
 }) => {
   const {
     TextComponent: o,
-    iconWidth: a
+    iconSize: a
   } = wt(() => t.size === "small" ? {
     TextComponent: Nn,
-    iconWidth: "4rem"
+    iconSize: "4rem"
   } : {
     TextComponent: vr,
-    iconWidth: "5rem"
+    iconSize: "5rem"
   }, [t.size]);
   return /* @__PURE__ */ D(zn.Wrapper, {
     ...t,
     disabled: t.active === !1 || t.active === "false",
     children: [r && /* @__PURE__ */ T(r, {
-      width: a
+      width: a,
+      height: a
     }), /* @__PURE__ */ T(o, {
       children: e
     })]

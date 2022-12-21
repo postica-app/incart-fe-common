@@ -1,8 +1,7 @@
-import { ComponentProps } from "@stitches/react";
-import { styles } from "./styles";
+import { ComponentProps } from '@stitches/react';
+import React from 'react';
+import { styles } from './styles';
 export declare const Button: React.FC<ComponentProps<typeof styles.Wrapper> & {
-    icon?: (props: {
-        width: string;
-    }) => JSX.Element;
+    icon?: (props: React.CSSProperties) => JSX.Element;
 }>;
 export default Button;
