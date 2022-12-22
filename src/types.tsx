@@ -20,10 +20,16 @@ export interface ProductType {
     }[]
 }
 
+export type Optionality = 'required' | 'optional'
+
 export interface ShippingMethodType {
     name: string
     price: number
     info?: string
+    form: {
+        address: Optionality
+        message: Optionality
+    }
 }
 
 export type PaymentAccountCodeProviderType = 'tossID' | 'KakaopayQR'

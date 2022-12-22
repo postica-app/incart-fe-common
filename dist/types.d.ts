@@ -17,10 +17,15 @@ export interface ProductType {
         items: ProductOptionType[];
     }[];
 }
+export declare type Optionality = 'required' | 'optional';
 export interface ShippingMethodType {
     name: string;
     price: number;
     info?: string;
+    form: {
+        address: Optionality;
+        message: Optionality;
+    };
 }
 export declare type PaymentAccountCodeProviderType = 'tossID' | 'KakaopayQR';
 export interface PaymentReceiveAccountType {
