@@ -20,7 +20,7 @@ export interface ProductType {
     }[]
 }
 
-export type Optionality = 'required' | 'optional'
+export type Optionality = 'required' | 'optional' | 'no'
 
 export interface ShippingMethodType {
     name: string

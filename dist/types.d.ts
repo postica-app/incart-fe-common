@@ -17,7 +17,7 @@ export interface ProductType {
         items: ProductOptionType[];
     }[];
 }
-export declare type Optionality = 'required' | 'optional';
+export declare type Optionality = 'required' | 'optional' | 'no';
 export interface ShippingMethodType {
     name: string;
     price: number;
