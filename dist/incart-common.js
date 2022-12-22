@@ -106,6 +106,7 @@ const gr = {
     alignItems: "center",
     justifyContent: "center",
     animated: !0,
+    boxSizing: "border-box",
     compoundVariants: [
       {
         ghost: !0,
@@ -118,6 +119,9 @@ const gr = {
           "&:active": {
             filter: "blur(1px) brightness(97%) saturate(90%)",
             boxShadow: "inset 0px 1rem 2rem rgba(0, 0, 0, 0.1)"
+          },
+          "&:focus": {
+            backgroundColor: "$purpleLight"
           }
         }
       },
@@ -136,6 +140,12 @@ const gr = {
         css: {
           "&:active": {
             filter: "brightness(150%) saturate(80%)"
+          },
+          "&:focus": {
+            elevated: !0,
+            lightBorder: {
+              withShadow: !0
+            }
           },
           backgroundColor: "$purple",
           color: "white"

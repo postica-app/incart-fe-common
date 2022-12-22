@@ -1,5 +1,5 @@
-import { ComponentProps, lazy, Suspense } from "react"
-import Button from "../components/Button"
+import { ComponentProps, lazy, Suspense } from 'react'
+import Button from '../components/Button'
 
 export default ({
     args,
@@ -7,13 +7,13 @@ export default ({
     args: {
         icon: string
         text: string
-        size: ComponentProps<typeof Button>["size"]
+        size: ComponentProps<typeof Button>['size']
         ghost: boolean
         active: boolean
     }
 }) => {
     const Icon = lazy(
-        () => import(/* @vite-ignore */ "../icons/" + args.icon + ".svg")
+        () => import(/* @vite-ignore */ '../icons/' + args.icon + '.svg')
     )
 
     return (
