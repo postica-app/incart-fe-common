@@ -1,17 +1,33 @@
-import { useFormik, FormikContext } from "formik"
-import Me from "../icons/Person.svg"
-import { FInput } from "../components/Input"
-import { FSwitch } from "../components/Switch"
-import FormField from "../components/FieldHeader"
-import { Vexile } from "@haechi/flexile"
-import { FCheckbox } from "../components/Checkbox"
-import { Text2 } from "../components/Text"
+import { useFormik, FormikContext } from 'formik'
+import { Vexile } from '@haechi/flexile'
+
+import { FCheckbox } from '../components/Checkbox'
+import FormField from '../components/FieldHeader'
+import { FSwitch } from '../components/Switch'
+import { FInput } from '../components/Input'
+import { Text2 } from '../components/Text'
+import Me from '../icons/Person.svg'
 
 export default () => {
     const formik = useFormik({
         initialValues: {
-            학과: "경제",
-            학번: "11239",
+            학과: '경제',
+            학번: '',
+            이름: '',
+        },
+        // validateOnBlur: true,
+        // validateOnMount: false,
+        validateOnChange: true,
+        validate(values) {
+            const errors: any = {}
+            if (values.학과 !== '경제') {
+                errors.학과 = '학과는 경제입니다'
+            }
+            if (values.학번 !== '10132') {
+                errors.학번 = '학번은 10132입니다'
+            }
+            errors.이름 = '이름은 김민수입니다'
+            return errors
         },
         onSubmit: (values) => {
             console.log(values)
@@ -30,10 +46,10 @@ export default () => {
                         <FSwitch
                             items={[
                                 {
-                                    key: "컴공",
+                                    key: '컴공',
                                 },
                                 {
-                                    key: "경제",
+                                    key: '경제',
                                 },
                             ]}
                             name="학과"
@@ -48,6 +64,9 @@ export default () => {
                             name="학번"
                             icon={(style) => <Me style={style} />}
                         />
+                    </FormField>
+                    <FormField name="이름" info="이름은 뭐니?" required>
+                        <FInput name="이름" />
                     </FormField>
                     <FormField name="자퇴할거에요?">
                         <FCheckbox name="자퇴">

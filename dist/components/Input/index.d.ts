@@ -1,5 +1,5 @@
-import React from "react";
-declare type InputProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "ref"> & {
+import React from 'react';
+declare type InputProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, 'ref'> & {
     icon?: (props: {
         width: string;
         flexShrink: number;

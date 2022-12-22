@@ -1,15 +1,15 @@
-import React from "react"
-import { useField } from "formik"
-import { styles } from "./styles"
-import { Vexile } from "@haechi/flexile"
-import { Text2 } from "../Text"
+import React from 'react'
+import { useField } from 'formik'
+import { styles } from './styles'
+import { Vexile } from '@haechi/flexile'
+import { Text2 } from '../Text'
 
 type InputProps = Omit<
     React.DetailedHTMLProps<
         React.InputHTMLAttributes<HTMLInputElement>,
         HTMLInputElement
     >,
-    "ref"
+    'ref'
 > & {
     icon?: (props: { width: string; flexShrink: number }) => JSX.Element
     errorMessage?: string
@@ -42,7 +42,13 @@ export const FInput: React.FC<
 > = (props) => {
     const [input, meta] = useField(props.name)
 
-    return <Input {...props} {...input} errorMessage={meta.error} />
+    return (
+        <Input
+            {...props}
+            {...input}
+            errorMessage={meta.touched ? meta.error : undefined}
+        />
+    )
 }
 
 export default Input
