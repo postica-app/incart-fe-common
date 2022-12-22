@@ -20,21 +20,27 @@ export interface ProductType {
     }[]
 }
 
+export interface ShippingMethodType {
+    name: string
+    price: number
+    info?: string
+}
+
+export type PaymentAccountCodeProviderType = 'tossID' | 'KakaopayQR'
+
+export interface PaymentReceiveAccountType {
+    bankAccount: {
+        bank: string
+        accountNumber: string
+    }
+    other: {
+        key: string
+        type: PaymentAccountCodeProviderType
+    }[]
+}
+
 export interface StoreType {
     name: string
-    payment_receive_account: {
-        bankAccount: {
-            bank: string
-            accountNumber: string
-        }
-        other: {
-            key: string
-            type: 'tossID' | 'KakaopayQR'
-        }[]
-    }
-    shipping_method: {
-        name: string
-        price: number
-        info?: string
-    }[]
+    payment_receive_account: PaymentReceiveAccountType
+    shipping_method: ShippingMethodType[]
 }
