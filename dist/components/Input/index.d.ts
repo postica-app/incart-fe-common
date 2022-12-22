@@ -9,5 +9,6 @@ declare type InputProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes
 export declare const Input: React.FC<InputProps>;
 export declare const FInput: React.FC<InputProps & {
     name: string;
+    showErrorMessage?: 'always' | 'dirty';
 }>;
 export default Input;

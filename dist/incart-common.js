@@ -2346,7 +2346,7 @@ const $c = ({
   return /* @__PURE__ */ T(Rc, {
     ...e,
     ...r,
-    errorMessage: t.touched ? t.error : void 0
+    errorMessage: e.showErrorMessage === "always" || t.touched ? t.error : void 0
   });
 }, Be = {
   Background: L(V.exports.Hexile, {

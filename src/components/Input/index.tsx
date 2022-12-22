@@ -38,6 +38,7 @@ export const Input: React.FC<InputProps> = ({
 export const FInput: React.FC<
     InputProps & {
         name: string
+        showErrorMessage?: 'always' | 'dirty'
     }
 > = (props) => {
     const [input, meta] = useField(props.name)
@@ -46,7 +47,13 @@ export const FInput: React.FC<
         <Input
             {...props}
             {...input}
-            errorMessage={meta.touched ? meta.error : undefined}
+            errorMessage={
+                props.showErrorMessage === 'always'
+                    ? meta.error
+                    : meta.touched
+                    ? meta.error
+                    : undefined
+            }
         />
     )
 }
