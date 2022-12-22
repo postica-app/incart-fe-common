@@ -139,7 +139,11 @@ const gr = {
         active: !0,
         css: {
           "&:active": {
-            filter: "brightness(150%) saturate(80%)"
+            filter: "brightness(150%) saturate(80%)",
+            opacity: 1
+          },
+          "&:focus:not(:active), &:hover:not(:active)": {
+            opacity: 0.8
           },
           "&:focus, &:hover": {
             elevated: !0,
