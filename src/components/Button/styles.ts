@@ -24,7 +24,7 @@ export const styles = {
                         filter: 'blur(1px) brightness(97%) saturate(90%)',
                         boxShadow: 'inset 0px 1rem 2rem rgba(0, 0, 0, 0.1)',
                     },
-                    '&:focus': {
+                    '&:focus, &:hover': {
                         backgroundColor: '$purpleLight',
                     },
                 },
@@ -45,7 +45,7 @@ export const styles = {
                     '&:active': {
                         filter: 'brightness(150%) saturate(80%)',
                     },
-                    '&:focus': {
+                    '&:focus, &:hover': {
                         elevated: true,
                         lightBorder: {
                             withShadow: true,
