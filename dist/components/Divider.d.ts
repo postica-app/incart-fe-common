@@ -1,4 +1,15 @@
 export declare const Divider: import("@stitches/react/types/styled-component").StyledComponent<"hr", {
+    purple?: boolean | "true" | undefined;
+    purpleLight?: boolean | "true" | undefined;
+    blue?: boolean | "true" | undefined;
+    blueLight?: boolean | "true" | undefined;
+    red?: boolean | "true" | undefined;
+    redLight?: boolean | "true" | undefined;
+    grey1?: boolean | "true" | undefined;
+    grey2?: boolean | "true" | undefined;
+    grey3?: boolean | "true" | undefined;
+    grey4?: boolean | "true" | undefined;
+    grey5?: boolean | "true" | undefined;
     orientation?: "landscape" | "portrait" | undefined;
 }, {
     phone: "(max-width: 480px)";
