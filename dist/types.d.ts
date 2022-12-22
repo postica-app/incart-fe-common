@@ -11,6 +11,7 @@ export interface ProductType {
     name: string;
     price: number;
     info?: string;
+    store_id: string;
     options?: {
         name: string;
         items: ProductOptionType[];
@@ -28,4 +29,9 @@ export interface StoreType {
             type: 'tossID' | 'KakaopayQR';
         }[];
     };
+    shipping_method: {
+        name: string;
+        price: number;
+        info?: string;
+    }[];
 }
