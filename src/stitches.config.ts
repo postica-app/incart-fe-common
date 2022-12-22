@@ -36,6 +36,7 @@ export const {
         }),
         clickAnimation: () => ({
             animated: true,
+            cursor: 'pointer',
             '&:active': {
                 filter: 'blur(1px) brightness(97%) saturate(90%)',
                 boxShadow: 'inset 0px 1rem 2rem rgba(0, 0, 0, 0.1)',

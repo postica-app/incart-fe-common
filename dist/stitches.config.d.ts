@@ -45,6 +45,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -110,6 +111,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -163,6 +165,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -234,6 +237,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         clickAnimation: () => {
             animated: boolean;
+            cursor: string;
             '&:active': {
                 filter: string;
                 boxShadow: string;
@@ -286,6 +290,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -338,6 +343,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         clickAnimation: () => {
             animated: boolean;
+            cursor: string;
             '&:active': {
                 filter: string;
                 boxShadow: string;
@@ -495,6 +501,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         clickAnimation: () => {
             animated: boolean;
+            cursor: string;
             '&:active': {
                 filter: string;
                 boxShadow: string;

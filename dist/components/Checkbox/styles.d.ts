@@ -47,6 +47,7 @@ export declare const styles: {
         };
         clickAnimation: () => {
             animated: boolean;
+            cursor: string;
             '&:active': {
                 filter: string;
                 boxShadow: string;

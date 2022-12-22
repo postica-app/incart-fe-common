@@ -62,6 +62,7 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -133,6 +134,7 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -204,6 +206,7 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -275,6 +278,7 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
@@ -346,6 +350,7 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     };
     clickAnimation: () => {
         animated: boolean;
+        cursor: string;
         '&:active': {
             filter: string;
             boxShadow: string;
