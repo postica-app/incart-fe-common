@@ -71,7 +71,7 @@ export interface ReceiverInfoType {
 }
 
 export interface ShippingInfoType {
-    address: {
+    address?: {
         roadname: string
         detail: string
     }

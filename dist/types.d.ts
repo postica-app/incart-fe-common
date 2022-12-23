@@ -61,7 +61,7 @@ export interface ReceiverInfoType {
     phoneNumber: string;
 }
 export interface ShippingInfoType {
-    address: {
+    address?: {
         roadname: string;
         detail: string;
     };
