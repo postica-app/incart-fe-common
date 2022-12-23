@@ -24,6 +24,16 @@ const commonStyle = {
                 textAlign: 'right',
             },
         },
+        underline: {
+            true: {
+                textDecoration: 'underline',
+            },
+        },
+        strike: {
+            true: {
+                textDecoration: 'line-through',
+            },
+        },
         ...(Object.fromEntries(
             Object.entries(colors).map(([colorName, value]) => [
                 colorName,

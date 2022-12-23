@@ -76,6 +76,16 @@ const He = {
         textAlign: "right"
       }
     },
+    underline: {
+      true: {
+        textDecoration: "underline"
+      }
+    },
+    strike: {
+      true: {
+        textDecoration: "line-through"
+      }
+    },
     ...Object.fromEntries(Object.entries(He).map(([e, r]) => [e, {
       true: {
         color: r
