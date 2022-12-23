@@ -50,3 +50,30 @@ export interface StoreType {
     payment_receive_account: PaymentReceiveAccountType
     shipping_method: ShippingMethodType[]
 }
+
+export type Doc<T> = T & { id: string }
+
+export interface CartItemType {
+    product: Doc<ProductType>
+    amount: number
+    selectedOptions: string[]
+}
+
+export interface OrdererInfoType {
+    name: string
+    phoneNumber: string
+    email: string
+}
+
+export interface ReceiverInfoType {
+    name: string
+    phoneNumber: string
+}
+
+export interface ShippingInfoType {
+    address: {
+        roadname: string
+        detail: string
+    }
+    message: string
+}
