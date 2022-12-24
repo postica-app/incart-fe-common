@@ -69,7 +69,7 @@ export interface ShippingInfoType {
 }
 export interface CreateOrderType {
     cart: (Omit<CartItemType, 'product'> & {
-        product: string;
+        product_id: string;
     })[];
     shipping: ShippingInfoType;
     orderer: OrdererInfoType;
