@@ -75,6 +75,7 @@ export interface ShippingInfoType {
         roadname: string
         detail: string
     }
+    method: string
     message: string
 }
 
@@ -85,4 +86,14 @@ export interface CreateOrderType {
     shipping: ShippingInfoType
     orderer: OrdererInfoType
     receiver: ReceiverInfoType
+}
+
+export interface OrderType {
+    store_id: string
+    shipping_info: ShippingInfoType
+    orderer_name: string
+    orderer_phone: string
+    orderer_email: string
+    receiver_name: string
+    receiver_phone: string
 }
