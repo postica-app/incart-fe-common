@@ -77,3 +77,12 @@ export interface ShippingInfoType {
     }
     message: string
 }
+
+export interface CreateOrderType {
+    cart: (Omit<CartItemType, 'product'> & {
+        product: string
+    })[]
+    shipping: ShippingInfoType
+    orderer: OrdererInfoType
+    receiver: ReceiverInfoType
+}
