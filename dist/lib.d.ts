@@ -11,3 +11,4 @@ export { Header1, Header2, Header3, Text1, Text2 } from './components/Text';
 export { FormikContext, useFormikContext, useField } from 'formik';
 export * from './types';
 export { default as colors } from './colors';
+export * from './functions';
