@@ -12,7 +12,7 @@ export interface ProductType {
     price: number;
     info?: string;
     store_id: string;
-    options?: {
+    options: {
         name: string;
         items: ProductOptionType[];
     }[];
