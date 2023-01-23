@@ -9,6 +9,7 @@ export const styles = {
         boxShadow: 'inset 0px 0px 0px 1rem $grey3',
         borderRadius: '2rem',
         flexShrink: 0,
+        clickAnimation: true,
         '&:checked': {
             boxShadow: 'inset 0px 0px 0px 1rem $purple',
             display: 'grid',

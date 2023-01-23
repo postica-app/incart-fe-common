@@ -2261,6 +2261,7 @@ const ln = {
     boxShadow: "inset 0px 0px 0px 1rem $grey3",
     borderRadius: "2rem",
     flexShrink: 0,
+    clickAnimation: !0,
     "&:checked": {
       boxShadow: "inset 0px 0px 0px 1rem $purple",
       display: "grid",

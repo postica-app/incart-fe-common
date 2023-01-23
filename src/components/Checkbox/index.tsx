@@ -1,9 +1,9 @@
-import { Hexile } from "@haechi/flexile"
-import { ComponentProps } from "@stitches/react"
-import { useField } from "formik"
-import { styles } from "./styles"
+import { Hexile } from '@haechi/flexile'
+import { ComponentProps } from '@stitches/react'
+import { useField } from 'formik'
+import { styles } from './styles'
 
-type CheckboxProps = ComponentProps<typeof styles["Box"]> & {
+type CheckboxProps = ComponentProps<typeof styles['Box']> & {
     children: JSX.Element
 }
 
