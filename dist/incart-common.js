@@ -868,7 +868,10 @@ const Rt = Ge.exports.Fragment, C = Ge.exports.jsx, D = Ge.exports.jsxs, Hn = /*
   }, [t.size]);
   return /* @__PURE__ */ D(zn.Wrapper, {
     ...t,
-    disabled: t.active === !1 || t.active === "false",
+    onClick: (i) => {
+      var s, u;
+      t.active === !1 || t.active === "false" ? (s = t == null ? void 0 : t.onDisabledClick) == null || s.call(t, i) : (u = t == null ? void 0 : t.onClick) == null || u.call(t, i);
+    },
     children: [r && /* @__PURE__ */ C(r, {
       width: a,
       height: a

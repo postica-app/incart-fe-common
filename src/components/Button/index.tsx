@@ -6,6 +6,9 @@ import { styles } from './styles'
 export const Button: React.FC<
     ComponentProps<typeof styles.Wrapper> & {
         icon?: (props: React.CSSProperties) => JSX.Element
+        onDisabledClick?: (
+            e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+        ) => void
     }
 > = ({ children: text, icon: Icon, ...props }) => {
     const { TextComponent, iconSize } = useMemo(
@@ -25,7 +28,13 @@ export const Button: React.FC<
     return (
         <styles.Wrapper
             {...props}
-            disabled={props.active === false || props.active === 'false'}
+            onClick={(e) => {
+                if (props.active === false || props.active === 'false') {
+                    props?.onDisabledClick?.(e)
+                } else {
+                    props?.onClick?.(e)
+                }
+            }}
         >
             {Icon && <Icon width={iconSize} height={iconSize} />}
             <TextComponent>{text}</TextComponent>

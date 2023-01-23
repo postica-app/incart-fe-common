@@ -30,6 +30,12 @@ export default ({
                     />
                 </Suspense>
             )}
+            onClick={() => {
+                alert('clicked')
+            }}
+            onDisabledClick={() => {
+                alert('disabled but clicked')
+            }}
         >
             {args.text}
         </Button>
