@@ -2559,6 +2559,7 @@ const $c = ({
       },
       active: e.active,
       onClick: () => t(!0),
+      onDisabledClick: e.onDisabledClick,
       children: e.children
     }), /* @__PURE__ */ _(yr, {
       style: {

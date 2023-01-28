@@ -7,6 +7,9 @@ export const RecheckButton: React.FC<{
     children: string
     icon?: (props: React.CSSProperties) => JSX.Element
     onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+    onDisabledClick?: (
+        e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => void
     active?: boolean
 }> = (props) => {
     const [isTouched, setIsTouched] = useState(false)
@@ -30,6 +33,7 @@ export const RecheckButton: React.FC<{
                 }}
                 active={props.active}
                 onClick={() => setIsTouched(true)}
+                onDisabledClick={props.onDisabledClick}
             >
                 {props.children}
             </Button>
