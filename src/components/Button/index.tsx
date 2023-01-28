@@ -10,7 +10,7 @@ export const Button: React.FC<
             e: React.MouseEvent<HTMLButtonElement, MouseEvent>
         ) => void
     }
-> = ({ children: text, icon: Icon, ...props }) => {
+> = React.forwardRef(({ children: text, icon: Icon, ...props }, ref) => {
     const { TextComponent, iconSize } = useMemo(
         () =>
             props.size === 'small'
@@ -27,6 +27,7 @@ export const Button: React.FC<
 
     return (
         <styles.Wrapper
+            ref={ref}
             {...props}
             onClick={(e) => {
                 if (props.active === false || props.active === 'false') {
@@ -40,6 +41,6 @@ export const Button: React.FC<
             <TextComponent>{text}</TextComponent>
         </styles.Wrapper>
     )
-}
+})
 
 export default Button
