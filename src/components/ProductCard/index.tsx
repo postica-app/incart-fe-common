@@ -16,14 +16,14 @@ export const ProductCard: React.FC<{
 }> = ({ product, onPurchase }) => {
     const [selectedOptionKey, _, __, Switch] = useSwitch({
         items:
-            product.options?.[0].items.map((option) => ({
+            product.options?.[0]?.items?.map((option) => ({
                 key: option.name,
             })) || [],
     })
 
     const selectedOption = useMemo(
         () =>
-            product.options?.[0].items.find(
+            product.options?.[0]?.items?.find(
                 (option) => option.name === selectedOptionKey
             ),
         [selectedOptionKey, product]
@@ -37,11 +37,13 @@ export const ProductCard: React.FC<{
             </Vexile>
             <Divider />
             <Hexile x="right" y="center" gap={6}>
-                {product.options && (
+                {product.options.length ? (
                     <Hexile gap={6} y="center" fillx>
-                        <Text2>{product.options[0].name}</Text2>
+                        <Text2>{product.options?.[0].name}</Text2>
                         {Switch}
                     </Hexile>
+                ) : (
+                    <></>
                 )}
                 <Hexile y="center" gap={4} keepsize>
                     <Header2 purple>
