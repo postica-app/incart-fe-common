@@ -1,20 +1,4 @@
-/* @font-face {
-    font-family: 'Seed';
-    src:  url('./LINESeedKR-Bd.woff2') format('woff2');
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Seed';
-    src:  url('./LINESeedKR-Rg.woff2') format('woff2');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Seed';
-    src:  url('./LINESeedKR-Th.woff2') format('woff2');
-    font-weight: 250;
-} */
+@import url(https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css);
 
 * {
     font-family: "SUIT";
