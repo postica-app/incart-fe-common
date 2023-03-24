@@ -2348,7 +2348,8 @@ const $c = ({
       children: [e && /* @__PURE__ */ _(gr.IconWrapper, {
         children: /* @__PURE__ */ _(e, {
           flexShrink: 0,
-          width: "6rem"
+          width: "6rem",
+          height: "6rem"
         })
       }), /* @__PURE__ */ _(gr.LogicalInput, {
         ...t

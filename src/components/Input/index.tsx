@@ -11,7 +11,11 @@ type InputProps = Omit<
     >,
     'ref'
 > & {
-    icon?: (props: { width: string; flexShrink: number }) => JSX.Element
+    icon?: (props: {
+        width: string
+        flexShrink: number
+        height: string
+    }) => JSX.Element
     errorMessage?: string
 }
 
@@ -25,7 +29,7 @@ export const Input: React.FC<InputProps> = ({
             <styles.Wrapper>
                 {Icon && (
                     <styles.IconWrapper>
-                        <Icon flexShrink={0} width="6rem" />
+                        <Icon flexShrink={0} width="6rem" height="6rem" />
                     </styles.IconWrapper>
                 )}
                 <styles.LogicalInput {...props} />

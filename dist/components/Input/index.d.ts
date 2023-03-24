@@ -3,6 +3,7 @@ declare type InputProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes
     icon?: (props: {
         width: string;
         flexShrink: number;
+        height: string;
     }) => JSX.Element;
     errorMessage?: string;
 };
