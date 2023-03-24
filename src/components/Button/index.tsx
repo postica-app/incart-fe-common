@@ -1,11 +1,12 @@
 import { ComponentProps } from '@stitches/react'
 import React, { useMemo } from 'react'
+import { css, keyframes } from '../../lib'
 import { Header2, Header3 } from '../Text'
 import { styles } from './styles'
 
 export const Button: React.FC<
     ComponentProps<typeof styles.Wrapper> & {
-        icon?: (props: React.CSSProperties) => JSX.Element
+        icon?: (props: { className: string }) => JSX.Element
         onDisabledClick?: (
             e: React.MouseEvent<HTMLButtonElement, MouseEvent>
         ) => void
@@ -37,7 +38,14 @@ export const Button: React.FC<
                 }
             }}
         >
-            {Icon && <Icon width={iconSize} height={iconSize} />}
+            {Icon && (
+                <Icon
+                    className={css({
+                        width: iconSize,
+                        height: iconSize,
+                    })()}
+                />
+            )}
             <TextComponent>{text}</TextComponent>
         </styles.Wrapper>
     )

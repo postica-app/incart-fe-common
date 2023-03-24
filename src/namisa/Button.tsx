@@ -23,11 +23,7 @@ export default ({
             active={args.active}
             icon={(p) => (
                 <Suspense fallback={<></>}>
-                    <Icon
-                        style={{
-                            width: p.width,
-                        }}
-                    />
+                    <Icon {...p} />
                 </Suspense>
             )}
             onClick={() => {

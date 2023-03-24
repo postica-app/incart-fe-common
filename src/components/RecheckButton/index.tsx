@@ -5,7 +5,7 @@ import { Wrapper } from './style'
 
 export const RecheckButton: React.FC<{
     children: string
-    icon?: (props: React.CSSProperties) => JSX.Element
+    icon?: (props: { className: string }) => JSX.Element
     onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
     onDisabledClick?: (
         e: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -43,7 +43,7 @@ export const RecheckButton: React.FC<{
                     top: isTouched ? 0 : '100%',
                     width: '100%',
                 }}
-                icon={(style) => <Refresh style={style} />}
+                icon={(props) => <Refresh {...props} />}
                 onClick={(e) => props.onClick(e)}
             >
                 한번 더 눌러주세요

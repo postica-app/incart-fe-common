@@ -1,4 +1,11 @@
-import { styled } from '../../stitches.config'
+import { keyframes, styled } from '../../stitches.config'
+
+const shake = keyframes({
+    // shake rotate
+    '0%': { transform: 'rotate(0deg)' },
+    '10%, 30%, 50%, 70%, 90%': { transform: 'rotate(-10deg)' },
+    '20%, 40%, 60%, 80%': { transform: 'rotate(10deg)' },
+})
 
 export const styles = {
     Wrapper: styled('button', {
@@ -26,6 +33,9 @@ export const styles = {
                     },
                     '&:focus, &:hover': {
                         backgroundColor: '$purpleLight',
+                        '& svg': {
+                            animation: `${shake} 3s ease-in-out infinite`,
+                        },
                     },
                 },
             },
@@ -53,6 +63,9 @@ export const styles = {
                         elevated: true,
                         lightBorder: {
                             withShadow: true,
+                        },
+                        '& svg': {
+                            animation: `${shake} 3s ease-in-out infinite`,
                         },
                     },
                     backgroundColor: '$purple',

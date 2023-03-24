@@ -53,7 +53,7 @@ export const ProductCard: React.FC<{
                         ).toLocaleString()}
                     </Header2>
                     <Button
-                        icon={(style) => <Cart style={style} />}
+                        icon={(props) => <Cart {...props} />}
                         onClick={() => onPurchase?.(selectedOptionKey)}
                     >
                         구매하기

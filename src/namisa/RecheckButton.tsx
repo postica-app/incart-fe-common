@@ -4,7 +4,7 @@ import { RecheckButton } from '../lib'
 export default (props: { active: boolean }) => {
     return (
         <RecheckButton
-            icon={(style) => <Arrow style={style} />}
+            icon={(props) => <Arrow {...props} />}
             onClick={() => console.log('축하드립니다~')}
             active={props.active}
         >
