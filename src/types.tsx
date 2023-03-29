@@ -97,3 +97,5 @@ export interface OrderType {
     receiver_name: string
     receiver_phone: string
 }
+
+export type OrderStage = 'created' | 'paid' | 'departed' | 'canceled'

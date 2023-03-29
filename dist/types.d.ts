@@ -85,3 +85,4 @@ export interface OrderType {
     receiver_name: string;
     receiver_phone: string;
 }
+export declare type OrderStage = 'created' | 'paid' | 'departed' | 'canceled';
