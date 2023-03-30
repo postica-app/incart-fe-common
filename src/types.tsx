@@ -98,4 +98,11 @@ export interface OrderType {
     receiver_phone: string
 }
 
-export type OrderStage = 'created' | 'paid' | 'departed' | 'canceled'
+export const OrderStage = {
+    created: 'created',
+    paid: 'paid',
+    departed: 'departed',
+    canceled: 'canceled',
+} as const
+
+export type OrderStage = keyof typeof OrderStage

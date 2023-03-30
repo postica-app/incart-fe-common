@@ -85,4 +85,10 @@ export interface OrderType {
     receiver_name: string;
     receiver_phone: string;
 }
-export declare type OrderStage = 'created' | 'paid' | 'departed' | 'canceled';
+export declare const OrderStage: {
+    readonly created: "created";
+    readonly paid: "paid";
+    readonly departed: "departed";
+    readonly canceled: "canceled";
+};
+export declare type OrderStage = keyof typeof OrderStage;
