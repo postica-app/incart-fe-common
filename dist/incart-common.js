@@ -2312,6 +2312,7 @@ const Ac = ({
   });
 }, Kc = (e) => /* @__PURE__ */ k(B.exports.Vexile, {
   gap: 3,
+  fillx: e.fillx,
   children: [/* @__PURE__ */ k(B.exports.Vexile, {
     gap: 1,
     children: [/* @__PURE__ */ k(Un, {
