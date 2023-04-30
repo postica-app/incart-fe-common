@@ -2607,7 +2607,7 @@ const Ac = ({
 }, ru = {
   created: "\uC811\uC218 \uB428",
   paid: "\uACB0\uC81C \uC644\uB8CC",
-  departed: "\uBC30\uC1A1 \uCD9C\uBC1C\uD568",
+  departed: "\uBC1C\uC1A1 \uC644\uB8CC",
   canceled: "\uCDE8\uC18C"
 };
 export {
