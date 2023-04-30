@@ -2603,6 +2603,11 @@ const Ac = ({
     return l.priceDelta || 0;
   }).reduce((s, u) => s + u);
   return (o + i) * e.amount;
+}, ru = {
+  created: "\uC811\uC218 \uB428",
+  paid: "\uACB0\uC81C \uC644\uB8CC",
+  departed: "\uBC30\uC1A1 \uCD9C\uBC1C\uD568",
+  canceled: "\uCDE8\uC18C"
 };
 export {
   yr as Button,
@@ -2618,6 +2623,7 @@ export {
   mr as Header2,
   Yn as Header3,
   jc as Input,
+  ru as ORDER_STAGE_MAP,
   Qc as OrderStage,
   Xc as ProductCard,
   Jc as RecheckButton,
