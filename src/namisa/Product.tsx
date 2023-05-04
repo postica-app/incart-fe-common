@@ -6,7 +6,7 @@ export default () => (
             info: '강원도산 감자전분으로 만든 바람떡입니다',
             name: '아주 맛있는 바람 떡',
             price: 10000,
-            store_id: '1',
+            store_rid: 1,
             options: [
                 {
                     name: '떡소',

@@ -12,7 +12,7 @@ export default () => {
     const formik = useFormik({
         initialValues: {
             학과: '경제',
-            학번: '',
+            학번: '20231551',
             이름: '',
         },
         // validateOnBlur: true,

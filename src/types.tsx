@@ -13,7 +13,7 @@ export interface ProductType {
     name: string
     price: number
     info?: string
-    store_id: string
+    store_rid: number
     options: {
         name: string
         items: ProductOptionType[]
@@ -46,6 +46,7 @@ export interface PaymentReceiveAccountType {
 }
 
 export interface StoreType {
+    rid: number
     name: string
     payment_receive_account: PaymentReceiveAccountType
     shipping_method: ShippingMethodType[]
@@ -89,7 +90,7 @@ export interface CreateOrderType {
 }
 
 export interface OrderType {
-    store_id: string
+    store_rid: number
     shipping_info: ShippingInfoType
     orderer_name: string
     orderer_phone: string
