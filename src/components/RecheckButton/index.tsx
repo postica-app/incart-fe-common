@@ -1,17 +1,16 @@
-import { useState } from 'react'
+import { ComponentProps, useState } from 'react'
 import { Button, css } from '../../lib'
 import Refresh from '../../icons/Refresh.svg'
 import { Wrapper } from './style'
 
-export const RecheckButton: React.FC<{
-    children: string
-    icon?: (props: { className: string }) => JSX.Element
-    onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
-    onDisabledClick?: (
-        e: React.MouseEvent<HTMLButtonElement, MouseEvent>
-    ) => void
-    active?: boolean
-}> = (props) => {
+export const RecheckButton: React.FC<
+    ComponentProps<typeof Button> & {
+        onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+        onDisabledClick?: (
+            e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+        ) => void
+    }
+> = (props) => {
     const [isTouched, setIsTouched] = useState(false)
     const [itemHeight, setItemHeight] = useState<number | null>(null)
 
@@ -22,7 +21,7 @@ export const RecheckButton: React.FC<{
             }}
         >
             <Button
-                icon={props.icon}
+                {...props}
                 ref={(e) =>
                     setItemHeight(e?.getBoundingClientRect()?.height || null)
                 }
@@ -31,9 +30,7 @@ export const RecheckButton: React.FC<{
                     top: isTouched ? '-100%' : 0,
                     width: '100%',
                 }}
-                active={props.active}
                 onClick={() => setIsTouched(true)}
-                onDisabledClick={props.onDisabledClick}
             >
                 {props.children}
             </Button>
