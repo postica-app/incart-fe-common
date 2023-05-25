@@ -5,6 +5,7 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     blueLight?: boolean | "true" | undefined;
     red?: boolean | "true" | undefined;
     redLight?: boolean | "true" | undefined;
+    redTrans?: boolean | "true" | undefined;
     grey1?: boolean | "true" | undefined;
     grey2?: boolean | "true" | undefined;
     grey3?: boolean | "true" | undefined;
@@ -30,6 +31,7 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -43,6 +45,7 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -79,6 +82,7 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     blueLight?: boolean | "true" | undefined;
     red?: boolean | "true" | undefined;
     redLight?: boolean | "true" | undefined;
+    redTrans?: boolean | "true" | undefined;
     grey1?: boolean | "true" | undefined;
     grey2?: boolean | "true" | undefined;
     grey3?: boolean | "true" | undefined;
@@ -104,6 +108,7 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -117,6 +122,7 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -153,6 +159,7 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     blueLight?: boolean | "true" | undefined;
     red?: boolean | "true" | undefined;
     redLight?: boolean | "true" | undefined;
+    redTrans?: boolean | "true" | undefined;
     grey1?: boolean | "true" | undefined;
     grey2?: boolean | "true" | undefined;
     grey3?: boolean | "true" | undefined;
@@ -178,6 +185,7 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -191,6 +199,7 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -227,6 +236,7 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     blueLight?: boolean | "true" | undefined;
     red?: boolean | "true" | undefined;
     redLight?: boolean | "true" | undefined;
+    redTrans?: boolean | "true" | undefined;
     grey1?: boolean | "true" | undefined;
     grey2?: boolean | "true" | undefined;
     grey3?: boolean | "true" | undefined;
@@ -252,6 +262,7 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -265,6 +276,7 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -301,6 +313,7 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     blueLight?: boolean | "true" | undefined;
     red?: boolean | "true" | undefined;
     redLight?: boolean | "true" | undefined;
+    redTrans?: boolean | "true" | undefined;
     grey1?: boolean | "true" | undefined;
     grey2?: boolean | "true" | undefined;
     grey3?: boolean | "true" | undefined;
@@ -326,6 +339,7 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -339,6 +353,7 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";

@@ -11,6 +11,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -24,6 +25,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -77,6 +79,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -90,6 +93,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -131,6 +135,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -144,6 +149,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -203,6 +209,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             readonly blueLight: "#EFF2F3";
             readonly red: "#E66C6C";
             readonly redLight: "#F3EFEF";
+            readonly redTrans: "rgba(230 108 108 / 0.4)";
             readonly grey1: "#F1EFF3";
             readonly grey2: "#D2CCD9";
             readonly grey3: "#C0B9C8";
@@ -216,6 +223,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             readonly blueLight: "#EFF2F3";
             readonly red: "#E66C6C";
             readonly redLight: "#F3EFEF";
+            readonly redTrans: "rgba(230 108 108 / 0.4)";
             readonly grey1: "#F1EFF3";
             readonly grey2: "#D2CCD9";
             readonly grey3: "#C0B9C8";
@@ -256,6 +264,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -269,6 +278,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: "#EFF2F3";
         readonly red: "#E66C6C";
         readonly redLight: "#F3EFEF";
+        readonly redTrans: "rgba(230 108 108 / 0.4)";
         readonly grey1: "#F1EFF3";
         readonly grey2: "#D2CCD9";
         readonly grey3: "#C0B9C8";
@@ -309,6 +319,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             readonly blueLight: "#EFF2F3";
             readonly red: "#E66C6C";
             readonly redLight: "#F3EFEF";
+            readonly redTrans: "rgba(230 108 108 / 0.4)";
             readonly grey1: "#F1EFF3";
             readonly grey2: "#D2CCD9";
             readonly grey3: "#C0B9C8";
@@ -322,6 +333,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             readonly blueLight: "#EFF2F3";
             readonly red: "#E66C6C";
             readonly redLight: "#F3EFEF";
+            readonly redTrans: "rgba(230 108 108 / 0.4)";
             readonly grey1: "#F1EFF3";
             readonly grey2: "#D2CCD9";
             readonly grey3: "#C0B9C8";
@@ -365,6 +377,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: import("@stitches/react/types/theme").Token<"blueLight", string, "colors", "">;
         readonly red: import("@stitches/react/types/theme").Token<"red", string, "colors", "">;
         readonly redLight: import("@stitches/react/types/theme").Token<"redLight", string, "colors", "">;
+        readonly redTrans: import("@stitches/react/types/theme").Token<"redTrans", string, "colors", "">;
         readonly grey1: import("@stitches/react/types/theme").Token<"grey1", string, "colors", "">;
         readonly grey2: import("@stitches/react/types/theme").Token<"grey2", string, "colors", "">;
         readonly grey3: import("@stitches/react/types/theme").Token<"grey3", string, "colors", "">;
@@ -378,6 +391,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight: import("@stitches/react/types/theme").Token<"blueLight", string, "shadows", "">;
         readonly red: import("@stitches/react/types/theme").Token<"red", string, "shadows", "">;
         readonly redLight: import("@stitches/react/types/theme").Token<"redLight", string, "shadows", "">;
+        readonly redTrans: import("@stitches/react/types/theme").Token<"redTrans", string, "shadows", "">;
         readonly grey1: import("@stitches/react/types/theme").Token<"grey1", string, "shadows", "">;
         readonly grey2: import("@stitches/react/types/theme").Token<"grey2", string, "shadows", "">;
         readonly grey3: import("@stitches/react/types/theme").Token<"grey3", string, "shadows", "">;
@@ -392,6 +406,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight?: string | number | boolean | undefined;
         readonly red?: string | number | boolean | undefined;
         readonly redLight?: string | number | boolean | undefined;
+        readonly redTrans?: string | number | boolean | undefined;
         readonly grey1?: string | number | boolean | undefined;
         readonly grey2?: string | number | boolean | undefined;
         readonly grey3?: string | number | boolean | undefined;
@@ -405,6 +420,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight?: string | number | boolean | undefined;
         readonly red?: string | number | boolean | undefined;
         readonly redLight?: string | number | boolean | undefined;
+        readonly redTrans?: string | number | boolean | undefined;
         readonly grey1?: string | number | boolean | undefined;
         readonly grey2?: string | number | boolean | undefined;
         readonly grey3?: string | number | boolean | undefined;
@@ -424,6 +440,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight?: string | number | boolean | undefined;
         readonly red?: string | number | boolean | undefined;
         readonly redLight?: string | number | boolean | undefined;
+        readonly redTrans?: string | number | boolean | undefined;
         readonly grey1?: string | number | boolean | undefined;
         readonly grey2?: string | number | boolean | undefined;
         readonly grey3?: string | number | boolean | undefined;
@@ -437,6 +454,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         readonly blueLight?: string | number | boolean | undefined;
         readonly red?: string | number | boolean | undefined;
         readonly redLight?: string | number | boolean | undefined;
+        readonly redTrans?: string | number | boolean | undefined;
         readonly grey1?: string | number | boolean | undefined;
         readonly grey2?: string | number | boolean | undefined;
         readonly grey3?: string | number | boolean | undefined;
@@ -465,6 +483,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             readonly blueLight: "#EFF2F3";
             readonly red: "#E66C6C";
             readonly redLight: "#F3EFEF";
+            readonly redTrans: "rgba(230 108 108 / 0.4)";
             readonly grey1: "#F1EFF3";
             readonly grey2: "#D2CCD9";
             readonly grey3: "#C0B9C8";
@@ -478,6 +497,7 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
             readonly blueLight: "#EFF2F3";
             readonly red: "#E66C6C";
             readonly redLight: "#F3EFEF";
+            readonly redTrans: "rgba(230 108 108 / 0.4)";
             readonly grey1: "#F1EFF3";
             readonly grey2: "#D2CCD9";
             readonly grey3: "#C0B9C8";

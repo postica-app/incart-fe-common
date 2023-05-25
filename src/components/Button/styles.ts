@@ -41,6 +41,27 @@ export const styles = {
             },
             {
                 ghost: true,
+                active: true,
+                danger: true,
+                css: {
+                    border: '0.5rem solid $redTrans',
+                    color: '$red',
+                    backgroundColor: 'white',
+                    elevated: true,
+                    '&:active': {
+                        filter: 'blur(1px) brightness(97%) saturate(90%)',
+                        boxShadow: 'inset 0px 1rem 2rem rgba(0, 0, 0, 0.1)',
+                    },
+                    '&:focus, &:hover': {
+                        backgroundColor: '$redLight',
+                        '& svg': {
+                            animation: `${shake} 3s ease-in-out infinite`,
+                        },
+                    },
+                },
+            },
+            {
+                ghost: true,
                 active: false,
                 css: {
                     border: '0.5rem solid $grey2',
@@ -104,6 +125,10 @@ export const styles = {
                 },
             },
             ghost: {
+                true: {},
+                false: {},
+            },
+            danger: {
                 true: {},
                 false: {},
             },

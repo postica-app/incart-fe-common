@@ -10,6 +10,7 @@ export default ({
         size: ComponentProps<typeof Button>['size']
         ghost: boolean
         active: boolean
+        danger: boolean
     }
 }) => {
     const Icon = lazy(
@@ -21,6 +22,7 @@ export default ({
             size={args.size}
             ghost={args.ghost}
             active={args.active}
+            danger={args.danger}
             icon={(p) => (
                 <Suspense fallback={<></>}>
                     <Icon {...p} />
