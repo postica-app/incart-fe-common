@@ -1,7 +1,8 @@
-import React from 'react'
-import { useField } from 'formik'
-import { styles } from './styles'
 import { Vexile } from '@haechi/flexile'
+import { useField } from 'formik'
+import React from 'react'
+
+import { styles } from './styles'
 import { Text2 } from '../Text'
 
 type InputProps = Omit<
@@ -33,6 +34,7 @@ export const Input: React.FC<InputProps> = ({
                     </styles.IconWrapper>
                 )}
                 <styles.LogicalInput {...props} />
+                {props.disabled && <styles.Blocked />}
             </styles.Wrapper>
             {errorMessage && <Text2 blue>{errorMessage}</Text2>}
         </Vexile>

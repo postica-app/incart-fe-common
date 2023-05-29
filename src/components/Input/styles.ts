@@ -1,5 +1,6 @@
 import { Hexile } from '@haechi/flexile'
 import { styled } from '../../stitches.config'
+import _Blocked from '../../icons/Blocked.svg'
 
 export const styles = {
     Wrapper: styled(Hexile, {
@@ -46,6 +47,7 @@ export const styles = {
         variants: {
             disabled: {
                 true: {
+                    position: 'relative',
                     cursor: 'not-allowed',
 
                     '&::after': {
@@ -64,16 +66,17 @@ export const styles = {
                         marginTop: '-12rem',
 
                         height: '6rem',
-                        marginLeft: '9rem',
+                        right: '11rem',
                         opacity: 0,
                         animated: true,
                     },
                     '&:hover::after': {
                         opacity: 1,
-                        marginLeft: '10rem',
+                        right: '12rem',
                     },
                 },
             },
         },
     }),
+    Blocked: styled(_Blocked, { margin: '3rem', color: '$grey5' }),
 }
