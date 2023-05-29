@@ -53,6 +53,9 @@ export const styles = {
                         backgroundColor: 'white',
                         borderRadius: '3rem',
                         color: '$purple',
+                        fontSize: '4rem',
+                        lineHeight: '6.5rem',
+
                         lightBorder: {
                             withShadow: true,
                         },
