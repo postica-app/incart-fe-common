@@ -24,11 +24,11 @@ export const Input: React.FC<InputProps> = ({
     errorMessage,
     ...props
 }) => (
-    <label>
+    <styles.LabelWithDisableTooltip disabled={props.disabled}>
         <Vexile gap={2}>
             <styles.Wrapper>
                 {Icon && (
-                    <styles.IconWrapper>
+                    <styles.IconWrapper disabled={props.disabled}>
                         <Icon flexShrink={0} width="6rem" height="6rem" />
                     </styles.IconWrapper>
                 )}
@@ -36,7 +36,7 @@ export const Input: React.FC<InputProps> = ({
             </styles.Wrapper>
             {errorMessage && <Text2 blue>{errorMessage}</Text2>}
         </Vexile>
-    </label>
+    </styles.LabelWithDisableTooltip>
 )
 
 export const FInput: React.FC<

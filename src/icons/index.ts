@@ -1,6 +1,7 @@
 export const iconList = [
     'Bag',
     'Bank',
+    'Blocked',
     'Calendar',
     'Call',
     'Cart',

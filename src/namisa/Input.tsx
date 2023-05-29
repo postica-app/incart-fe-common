@@ -1,21 +1,20 @@
-import { lazy, Suspense } from "react"
-import Input from "../components/Input"
-import { iconList } from "../icons"
+import { lazy, Suspense } from 'react'
+import Input from '../components/Input'
+import { iconList } from '../icons'
 
 export default (props: {
-    args: {
-        icon: typeof iconList[number]
-        placeholder: string
-        showIcon: boolean
-    }
+    icon: (typeof iconList)[number]
+    placeholder: string
+    showIcon: boolean
+    disabled: boolean
 }) => {
     const Icon = lazy(
-        () => import(/* @vite-ignore */ "../icons/" + props.args.icon + ".svg")
+        () => import('../icons/' + props.icon + '.svg' /* @vite-ignore */)
     )
     return (
         <Input
             icon={
-                props.args.showIcon
+                props.showIcon
                     ? (style) => (
                           <Suspense>
                               <Icon style={style} />
@@ -23,7 +22,8 @@ export default (props: {
                       )
                     : undefined
             }
-            placeholder={props.args.placeholder}
+            placeholder={props.placeholder}
+            disabled={props.disabled}
         />
     )
 }

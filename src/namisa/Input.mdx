@@ -1,21 +1,24 @@
 # Input
 
-import Input from "./Input"
-import { iconList } from "../icons"
+import Input from './Input'
+import { iconList } from '../icons'
 
 <Namisa
     controls={{
         showIcon: {
-            default: false,
+            default: true,
         },
         icon: {
             options: iconList,
             default: iconList[0],
         },
         placeholder: {
-            default: "Placeholder",
+            default: 'Placeholder',
+        },
+        disabled: {
+            default: true,
         },
     }}
 >
-    {({ args }) => <Input args={args} />}
+    {({ args }) => <Input {...args} />}
 </Namisa>
