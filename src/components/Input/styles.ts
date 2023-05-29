@@ -78,5 +78,10 @@ export const styles = {
             },
         },
     }),
-    Blocked: styled(_Blocked, { margin: '3rem', color: '$grey5' }),
+    Blocked: styled(_Blocked, {
+        margin: '3rem',
+        color: '$grey5',
+        width: '6rem',
+        height: '6rem',
+    }),
 }

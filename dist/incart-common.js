@@ -2420,7 +2420,12 @@ const Ac = ({
       }
     }
   }),
-  Blocked: P(jc, { margin: "3rem", color: "$grey5" })
+  Blocked: P(jc, {
+    margin: "3rem",
+    color: "$grey5",
+    width: "6rem",
+    height: "6rem"
+  })
 }, Pc = ({
   icon: e,
   errorMessage: r,
