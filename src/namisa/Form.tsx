@@ -14,6 +14,7 @@ export default () => {
             학과: '경제',
             학번: '20231551',
             이름: '',
+            자퇴: true,
         },
         // validateOnBlur: true,
         // validateOnMount: false,
