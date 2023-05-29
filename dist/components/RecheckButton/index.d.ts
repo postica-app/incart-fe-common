@@ -1,10 +1,11 @@
-export declare const RecheckButton: React.FC<{
-    children: string;
-    icon?: (props: {
-        className: string;
-    }) => JSX.Element;
-    onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-    onDisabledClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-    active?: boolean;
-}>;
-export default RecheckButton;
+import { ComponentProps } from 'react'
+import { Button } from '../../lib'
+export declare const RecheckButton: React.FC<
+    ComponentProps<typeof Button> & {
+        onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
+        onDisabledClick?: (
+            e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+        ) => void
+    }
+>
+export default RecheckButton
