@@ -2,7 +2,7 @@ import { Hexile, Vexile } from '@haechi/flexile'
 import Button from '../Button'
 import { Divider } from '../Divider'
 import useSwitch from '../Switch'
-import { Header2, Text2 } from '../Text'
+import { Header2, Header3, Text2 } from '../Text'
 import Cart from '../../icons/Cart.svg'
 import Info from '../../icons/Info.svg'
 import Styles from './styles'
@@ -36,16 +36,16 @@ export const ProductCard: React.FC<{
                 {product.info && <Text2>{product.info}</Text2>}
             </Vexile>
             <Divider />
-            <Hexile x="right" y="center" gap={6}>
+            <Hexile y="center" gap={6}>
                 {product.options.length ? (
-                    <Hexile gap={6} y="center" fillx>
-                        <Text2>{product.options?.[0].name}</Text2>
+                    <Vexile gap={3} y="center" fillx>
+                        <Header3>{product.options?.[0].name}</Header3>
                         {Switch}
-                    </Hexile>
+                    </Vexile>
                 ) : (
                     <></>
                 )}
-                <Hexile y="center" gap={4} keepsize>
+                <Vexile y="center" gap={3}>
                     <Header2 purple>
                         ￦
                         {(
@@ -58,7 +58,7 @@ export const ProductCard: React.FC<{
                     >
                         구매하기
                     </Button>
-                </Hexile>
+                </Vexile>
             </Hexile>
             {selectedOption?.info && (
                 <Callout icon={(style) => <Info style={style} />}>

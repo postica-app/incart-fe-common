@@ -1,12 +1,13 @@
-import styles from "./styles"
-import { ItemType } from "../../types"
-import { Text2 } from "../Text"
-import { Vexile } from "@haechi/flexile"
+import styles from './styles'
+import { ItemType } from '../../types'
+import { Text2 } from '../Text'
+import { Vexile } from '@haechi/flexile'
 
 export interface SwitchProps {
     items: ItemType[]
     selectedKey?: string
     onClick?: (selectedKey: string) => void
+    verticalText?: boolean
 }
 
 export const SwitchView: React.FC<
@@ -23,12 +24,15 @@ export const SwitchView: React.FC<
                         padding={3}
                         fillx
                         x="center"
+                        y="center"
                         active={props.selectedKey === item.key}
                         onClick={
                             props.onClick && (() => props.onClick?.(item.key))
                         }
                     >
-                        <Text2>{item.name || item.key}</Text2>
+                        <Text2 linebreak={!!props.verticalText} center>
+                            {item.name || item.key}
+                        </Text2>
                     </styles.Item>
                 ))}
                 <styles.IndicatorWrapper

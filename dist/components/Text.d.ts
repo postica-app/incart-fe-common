@@ -17,6 +17,7 @@ export declare const Header1: import("@stitches/react/types/styled-component").S
     right?: boolean | "true" | undefined;
     underline?: boolean | "true" | undefined;
     strike?: boolean | "true" | undefined;
+    linebreak?: boolean | "false" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -94,6 +95,7 @@ export declare const Header2: import("@stitches/react/types/styled-component").S
     right?: boolean | "true" | undefined;
     underline?: boolean | "true" | undefined;
     strike?: boolean | "true" | undefined;
+    linebreak?: boolean | "false" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -171,6 +173,7 @@ export declare const Header3: import("@stitches/react/types/styled-component").S
     right?: boolean | "true" | undefined;
     underline?: boolean | "true" | undefined;
     strike?: boolean | "true" | undefined;
+    linebreak?: boolean | "false" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -248,6 +251,7 @@ export declare const Text1: import("@stitches/react/types/styled-component").Sty
     right?: boolean | "true" | undefined;
     underline?: boolean | "true" | undefined;
     strike?: boolean | "true" | undefined;
+    linebreak?: boolean | "false" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";
@@ -325,6 +329,7 @@ export declare const Text2: import("@stitches/react/types/styled-component").Sty
     right?: boolean | "true" | undefined;
     underline?: boolean | "true" | undefined;
     strike?: boolean | "true" | undefined;
+    linebreak?: boolean | "false" | undefined;
 }, {
     phone: "(max-width: 480px)";
     tablet: "(max-width: 1200px)";

@@ -34,6 +34,11 @@ const commonStyle = {
                 textDecoration: 'line-through',
             },
         },
+        linebreak: {
+            false: {
+                whiteSpace: 'nowrap',
+            },
+        },
         ...(Object.fromEntries(
             Object.entries(colors).map(([colorName, value]) => [
                 colorName,

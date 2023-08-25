@@ -46,7 +46,7 @@ export const Button: React.FC<
                     })()}
                 />
             )}
-            <TextComponent>{text}</TextComponent>
+            <TextComponent linebreak={false}>{text}</TextComponent>
         </styles.Wrapper>
     )
 })
