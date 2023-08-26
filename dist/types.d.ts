@@ -27,27 +27,35 @@ export interface ShippingMethodType {
         message: Optionality;
     };
 }
+export interface PaymentReceiveAccount {
+    provider: string;
+    data: unknown;
+}
+export interface BankAccount extends PaymentReceiveAccount {
+    provider: 'BANK_ACCOUNT';
+    data: {
+        bank: string;
+        name: string;
+        account: string;
+    };
+}
+export interface KakaoPayTransfer extends PaymentReceiveAccount {
+    provider: 'KAKAOPAY_TRANSFER';
+    data: {
+        uid: string;
+    };
+}
+export interface TossId extends PaymentReceiveAccount {
+    provider: 'TOSS_ID';
+    data: {
+        id: string;
+    };
+}
+export declare type PaymentReceiveAccountType = BankAccount | KakaoPayTransfer | TossId;
 export interface StoreType {
     rid: number;
     name: string;
-    payment_receive_account: ({
-        provider: 'BANK_ACCOUNT';
-        data: {
-            bank: string;
-            name: string;
-            account: string;
-        };
-    } | {
-        provider: 'KAKAOPAY_TRANSFER';
-        data: {
-            uid: string;
-        };
-    } | {
-        provider: 'TOSS_ID';
-        data: {
-            id: string;
-        };
-    })[];
+    payment_receive_account?: PaymentReceiveAccountType[];
     shipping_method: ShippingMethodType[];
 }
 export declare type Doc<T> = T & {
