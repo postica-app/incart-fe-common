@@ -14,7 +14,7 @@
         "@haechi/flexile": "^1.4.7",
         "@stitches/react": "^1.2.8",
         "formik": "^2.2.9",
-        "namisa": "https://github.com/rycont/namisa",
+        "namisa": "github:rycont/namisa",
         "react": "^18.0.0",
         "react-dom": "^18.0.0"
     },

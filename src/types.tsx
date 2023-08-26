@@ -32,23 +32,31 @@ export interface ShippingMethodType {
     }
 }
 
-export type PaymentAccountCodeProviderType = 'tossID' | 'KakaopayQR'
-
-export interface PaymentReceiveAccountType {
-    bankAccount: {
-        bank: string
-        accountNumber: string
-    }
-    other: {
-        key: string
-        type: PaymentAccountCodeProviderType
-    }[]
-}
-
 export interface StoreType {
     rid: number
     name: string
-    payment_receive_account: PaymentReceiveAccountType
+    payment_receive_account?: (
+        | {
+              provider: 'BANK_ACCOUNT'
+              data: {
+                  bank: string
+                  name: string
+                  account: string
+              }
+          }
+        | {
+              provider: 'KAKAOPAY_TRANSFER'
+              data: {
+                  uid: string
+              }
+          }
+        | {
+              provider: 'TOSS_ID'
+              data: {
+                  id: string
+              }
+          }
+    )[]
     shipping_method: ShippingMethodType[]
 }
 
