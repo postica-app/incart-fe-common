@@ -39,19 +39,13 @@ export interface BankAccount extends PaymentReceiveAccount {
         account: string;
     };
 }
-export interface KakaoPayTransfer extends PaymentReceiveAccount {
-    provider: 'KAKAOPAY_TRANSFER';
-    data: {
-        uid: string;
-    };
-}
 export interface TossId extends PaymentReceiveAccount {
     provider: 'TOSS_ID';
     data: {
         id: string;
     };
 }
-export declare type PaymentReceiveAccountType = BankAccount | KakaoPayTransfer | TossId;
+export declare type PaymentReceiveAccountType = BankAccount | TossId;
 export interface StoreType {
     rid: number;
     name: string;

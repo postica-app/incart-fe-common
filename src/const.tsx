@@ -13,6 +13,5 @@ export const PAYMENT_PROVIDER_MAP: {
     [key in PaymentReceiveAccountType['provider']]: string
 } = {
     BANK_ACCOUNT: '계좌이체',
-    KAKAOPAY_TRANSFER: '카카오페이',
     TOSS_ID: '토스',
 } as const
