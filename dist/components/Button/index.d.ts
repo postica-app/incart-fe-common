@@ -6,5 +6,6 @@ export declare const Button: React.FC<ComponentProps<typeof styles.Wrapper> & {
         className: string;
     }) => JSX.Element;
     onDisabledClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    loading?: boolean;
 }>;
 export default Button;

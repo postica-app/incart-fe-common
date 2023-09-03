@@ -46,6 +46,8 @@ export declare const styles: {
         };
         animated: () => {
             transition: string;
+            animationTimingFunction: string;
+            animationDuration: string;
         };
         clickAnimation: () => {
             animated: boolean;

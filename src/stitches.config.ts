@@ -33,6 +33,8 @@ export const {
                   },
         animated: () => ({
             transition: '300ms cubic-bezier(0,.67,0,.99)',
+            animationTimingFunction: 'cubic-bezier(0,.67,0,.99)',
+            animationDuration: '300ms',
         }),
         clickAnimation: () => ({
             animated: true,

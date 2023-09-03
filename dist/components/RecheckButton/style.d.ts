@@ -45,6 +45,8 @@ export declare const Wrapper: import("@stitches/react/types/styled-component").S
     };
     animated: () => {
         transition: string;
+        animationTimingFunction: string;
+        animationDuration: string;
     };
     clickAnimation: () => {
         animated: boolean;

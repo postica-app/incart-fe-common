@@ -11,6 +11,7 @@ export default ({
         ghost: boolean
         active: boolean
         danger: boolean
+        loading: boolean
     }
 }) => {
     const Icon = lazy(
@@ -23,6 +24,7 @@ export default ({
             ghost={args.ghost}
             active={args.active}
             danger={args.danger}
+            loading={args.loading}
             icon={(p) => (
                 <Suspense fallback={<></>}>
                     <Icon {...p} />

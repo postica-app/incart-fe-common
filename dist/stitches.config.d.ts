@@ -44,6 +44,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     animated: () => {
         transition: string;
+        animationTimingFunction: string;
+        animationDuration: string;
     };
     clickAnimation: () => {
         animated: boolean;
@@ -112,6 +114,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     animated: () => {
         transition: string;
+        animationTimingFunction: string;
+        animationDuration: string;
     };
     clickAnimation: () => {
         animated: boolean;
@@ -168,6 +172,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     animated: () => {
         transition: string;
+        animationTimingFunction: string;
+        animationDuration: string;
     };
     clickAnimation: () => {
         animated: boolean;
@@ -242,6 +248,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         animated: () => {
             transition: string;
+            animationTimingFunction: string;
+            animationDuration: string;
         };
         clickAnimation: () => {
             animated: boolean;
@@ -297,6 +305,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
     };
     animated: () => {
         transition: string;
+        animationTimingFunction: string;
+        animationDuration: string;
     };
     clickAnimation: () => {
         animated: boolean;
@@ -352,6 +362,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         animated: () => {
             transition: string;
+            animationTimingFunction: string;
+            animationDuration: string;
         };
         clickAnimation: () => {
             animated: boolean;
@@ -518,6 +530,8 @@ export declare const styled: <Type extends import("@stitches/react/types/util").
         };
         animated: () => {
             transition: string;
+            animationTimingFunction: string;
+            animationDuration: string;
         };
         clickAnimation: () => {
             animated: boolean;

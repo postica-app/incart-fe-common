@@ -25,4 +25,5 @@ export const iconList = [
     'Truck',
     'Wallet',
     'X',
+    'Spinner',
 ] as const

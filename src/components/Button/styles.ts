@@ -1,3 +1,4 @@
+import _Spinner from '../../icons/Spinner.svg'
 import { keyframes, styled } from '../../stitches.config'
 
 const shake = keyframes({
@@ -140,3 +141,26 @@ export const styles = {
         },
     }),
 }
+
+export const ViewArea = styled('div', {
+    // overflow: 'hidden',
+    position: 'relative',
+})
+
+export const IconStack = styled('div', {
+    display: 'flex',
+    flexDirection: 'column',
+    animated: true,
+    position: 'absolute',
+    variants: {
+        showBottom: {
+            true: {
+                transform: 'translateY(calc(-1 * var(--icon-size)))',
+            },
+        },
+    },
+})
+
+export const Spinner = styled(_Spinner, {
+    animated: true,
+})
