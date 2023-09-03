@@ -1,9 +1,9 @@
-import { ComponentProps } from '@stitches/react'
 import React, { CSSProperties, useMemo } from 'react'
-import { css, keyframes } from '../../lib'
-import { Header2, Header3 } from '../Text'
+import { ComponentProps } from '@stitches/react'
+
 import { ViewArea, IconStack, styles, Spinner } from './styles'
-import { Vexile } from '@haechi/flexile'
+import { Header2, Header3 } from '../Text'
+import { css } from '../../lib'
 
 export const Button: React.FC<
     ComponentProps<typeof styles.Wrapper> & {
@@ -14,7 +14,7 @@ export const Button: React.FC<
         loading?: boolean
     }
 > = React.forwardRef(
-    ({ children: text, icon: Icon, loading, ...props }, ref) => {
+    ({ children: text, icon: Icon, loading, active = true, ...props }, ref) => {
         const { TextComponent, iconSize } = useMemo(
             () =>
                 props.size === 'small'
@@ -29,7 +29,7 @@ export const Button: React.FC<
             [props.size]
         )
 
-        const disabled = props.disabled || loading || !props.active
+        const disabled = props.disabled || loading || !active
 
         return (
             <styles.Wrapper
@@ -38,7 +38,7 @@ export const Button: React.FC<
                 disabled={disabled}
                 active={!disabled}
                 onClick={(e) => {
-                    if (props.active === false || props.active === 'false') {
+                    if (!active || active === 'false') {
                         props?.onDisabledClick?.(e)
                     } else {
                         props?.onClick?.(e)

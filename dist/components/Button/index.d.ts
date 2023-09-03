@@ -1,5 +1,5 @@
-import { ComponentProps } from '@stitches/react';
 import React from 'react';
+import { ComponentProps } from '@stitches/react';
 import { styles } from './styles';
 export declare const Button: React.FC<ComponentProps<typeof styles.Wrapper> & {
     icon?: (props: {
